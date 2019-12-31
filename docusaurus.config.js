@@ -14,10 +14,12 @@ module.exports = {
         src: 'img/logo.png',
       },
       links: [
-        {to: 'docs/DataStructure/list', label: 'Docs', position: 'left'},
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {to: 'docs/DataStructure/README', label: 'Data Structure', position: 'left'},
+        {to: 'docs/Patterns/README', label: 'Patterns', position: 'left'},
+        {to: 'docs/Language/README', label: 'Language', position: 'left'},
+        // {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/gazcn007',
+          href: 'https://github.com/patternize',
           label: 'GitHub',
           position: 'right',
         },
@@ -62,7 +64,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Carl Liu.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Carl Liu (gazcn007)`,
     },
   },
   presets: [
@@ -71,8 +73,8 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/edit/master/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

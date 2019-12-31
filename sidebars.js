@@ -6,14 +6,34 @@
  */
 
 module.exports = {
-  doc: {
-    'Data Structure': [
-    	'DataStructure/list',
-    	'DataStructure/map',
-    	'DataStructure/bit_manipulation'
-    	],
-    Features: ['mdx'],
-  },
+  'Language': [
+  	'Language/README',
+  	{
+  		type: 'category',
+  		label: 'Java',
+  		items: [
+    		'Language/Java/list',
+    		'Language/Java/map',
+    		'Language/Java/bit_manipulation'
+    	]
+  	}
+  ],
+  'Data Structure': [
+  	'DataStructure/README',
+  	{
+  		type: 'category',
+  		label: 'Advanced',
+  		items:['DataStructure/Advanced/vlist']
+  	}
+  ],
+  'Patterns': [
+  	'Patterns/README',
+  	{
+  		type: 'category',
+  		label: 'Backtracking',
+  		items: ['Patterns/Backtracking/ExpressionPuzzle']
+  	}
+  ]
 };
 
 // module.exports = {
