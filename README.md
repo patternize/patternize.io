@@ -1,4 +1,7 @@
-![Patternize.io](https://patternize.github.io/img/logo.png)
+
+<p align="center">
+  <img width="300px" src="https://patternize.github.io/img/logo.png">
+</p>
 
 # Patternize.io
 
