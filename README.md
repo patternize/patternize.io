@@ -1,3 +1,5 @@
+![Patternize.io](https://patternize.github.io/img/logo.png)
+
 # Patternize.io
 
 - View the website now: [Patternize.io](http://patternize.github.io/)
