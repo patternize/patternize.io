@@ -31,7 +31,11 @@ module.exports = {
   	{
   		type: 'category',
   		label: 'Backtracking',
-  		items: ['Patterns/Backtracking/ExpressionPuzzle']
+  		items: [
+  			'Patterns/Backtracking/README',
+  			'Patterns/Backtracking/Permutation',
+  			'Patterns/Backtracking/ExpressionPuzzle',
+		]
   	}
   ]
 };
