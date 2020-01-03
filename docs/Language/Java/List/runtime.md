@@ -1,10 +1,8 @@
 ---
-id: runtime
+id: Runtime
 title: Runtime
 sidebar_label: Runtime
 ---
-
-## Runtime Summary
 
 List                 | add  | remove | get  | contains | next | Data Structure
 ---------------------|------|--------|------|----------|------|---------------

@@ -1,8 +1,13 @@
 ---
-id: map
-title: Map (Interface)
-sidebar_label: Map (Interface)
+id: Interface
+title: Interface
+sidebar_label: Interface
 ---
+
+## Basics
+- maps Key to Value -- `<K, V>`
+- no duplicated Key allowed, or it will overwrite previous value with the same Key, aka. a key can only map to at most one value
+- deplicated Values are allowed
 
 ## Put
 - Returns previous value in the Key associated:

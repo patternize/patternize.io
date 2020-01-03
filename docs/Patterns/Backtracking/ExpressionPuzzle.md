@@ -59,9 +59,16 @@ Now, since we have a validation function `checkSolution` to check if a solution 
 
 ```java
 Set<Character> getCharSet(){
-    Set<Character> set = new HashSet<Character>(Arrays.asList(first.toCharArray()));
-    set.addAllArrays.asList(second.toCharArray());
-    set.addAllArrays.asList(result.toCharArray());
+    Set<Character> set = new HashSet<Character>();
+    for(int i = 0; i < first.length(); i++){
+        set.add(first.charAt(i));
+    }
+    for(int i = 0; i < second.length(); i++){
+        set.add(second.charAt(i));
+    }
+    for(int i = 0; i < result.length(); i++){
+        set.add(result.charAt(i));
+    }
     return set;
 }
 

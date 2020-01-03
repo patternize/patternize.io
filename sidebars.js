@@ -17,32 +17,38 @@ module.exports = {
           type: 'category',
           label: 'List',
           items: [
-            'Language/Java/List/list',
-            'Language/Java/List/runtime',
+            'Language/Java/List/Interface',
+            'Language/Java/List/ArrayList',
+            'Language/Java/List/LinkedList',
+            'Language/Java/List/Stack',
+            'Language/Java/List/Runtime',
           ]
         },
         {
           type: 'category',
           label: 'Set',
           items: [
-            'Language/Java/Set/set',
-            'Language/Java/Set/runtime'
+            'Language/Java/Set/Interface',
+            'Language/Java/Set/HashSet',
+            'Language/Java/Set/Runtime'
           ]
         },
         {
           type: 'category',
           label: 'Queue/Dequeue',
           items: [
-            'Language/Java/Queue/dequeue',
-            'Language/Java/Queue/runtime'
+            'Language/Java/Queue/Interface',
+            'Language/Java/List/LinkedList',
+            'Language/Java/Queue/PriorityQueue',
+            'Language/Java/Queue/Runtime'
           ]
         },
         {
           type: 'category',
           label: 'Map',
           items: [
-            'Language/Java/Map/map',
-            'Language/Java/Map/runtime'
+            'Language/Java/Map/Interface',
+            'Language/Java/Map/Runtime'
           ]
         }
       ]

@@ -1,10 +1,8 @@
 ---
-id: runtime
+id: Runtime
 title: Runtime
 sidebar_label: Runtime
 ---
-
-## Runtime Summary
 
 Map |put |   get    | containsKey |   next   | Data Structure
 ------------|----------|----------|-------------|----------|-------------------------

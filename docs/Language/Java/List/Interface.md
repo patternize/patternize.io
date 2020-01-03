@@ -1,8 +1,13 @@
 ---
-id: list
-title: List (Interface)
-sidebar_label: List (Interface)
+id: Interface
+title: Interface
+sidebar_label: Interface
 ---
+
+## Basics
+- Ordered collection
+- Access by index
+- May contain duplicates
 
 ## Iterate through Values:
 - use for loop directly:
