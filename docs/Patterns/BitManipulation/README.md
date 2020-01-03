@@ -1,6 +1,6 @@
 ---
 id: README
-title: Introduction
+title: Bit Manipulation
 sidebar_label: Introduction
 ---
 

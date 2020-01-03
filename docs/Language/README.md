@@ -1,7 +1,7 @@
 ---
 id: README
-title: Language Specific Notes
-sidebar_label: Introduction
+title: Preface
+sidebar_label: Preface
 ---
 
 This page will be language specific.

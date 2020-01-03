@@ -1,6 +1,6 @@
 ---
 id: README
-title: Introduction
+title: Backtracking
 sidebar_label: Introduction
 ---
 
@@ -32,7 +32,7 @@ class Solution {
         solutions = new ArrayList<>();
         // call backtrack
         backtrack(param1, param2);
-        // return solution
+        // return results
         return this.results;
     }
 

@@ -16,7 +16,6 @@ for (List<Interval> employeeIntervals: avails){
 }
 ```
 
-
 ## Declare with default values:
 
 ### Convert a primitive list to a List object:

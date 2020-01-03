@@ -7,16 +7,46 @@
 
 module.exports = {
   'Language': [
-  	'Language/README',
-  	{
-  		type: 'category',
-  		label: 'Java Data Structure',
-  		items: [
+    'Language/README',
+    {
+      type: 'category',
+      label: 'Java Data Structure',
+      items: [
         'Language/Java/README',
-    		'Language/Java/list',
-    		'Language/Java/map'
-    	]
-  	}
+        {
+          type: 'category',
+          label: 'List',
+          items: [
+            'Language/Java/List/list',
+            'Language/Java/List/runtime',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Set',
+          items: [
+            'Language/Java/Set/set',
+            'Language/Java/Set/runtime'
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Queue/Dequeue',
+          items: [
+            'Language/Java/Queue/dequeue',
+            'Language/Java/Queue/runtime'
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Map',
+          items: [
+            'Language/Java/Map/map',
+            'Language/Java/Map/runtime'
+          ]
+        }
+      ]
+    }
   ],
   'Data Structure': [
   	'DataStructure/README',
