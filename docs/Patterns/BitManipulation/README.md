@@ -1,16 +1,14 @@
 ---
-id: bit_manipulation
-title: Bit Manipulation
-sidebar_label: Bit Manipulation
+id: README
+title: Introduction
+sidebar_label: Introduction
 ---
 
-# Bit Manipulation
-
-## Power of 2:
+## Power of 2
     1 << x === 2^x
 
 
-## Log Base of 2:
+## Log Base of 2
     # log(a) base b = log(a)/log(b)
     32 >> 5 === log(32)/log(2) 
 

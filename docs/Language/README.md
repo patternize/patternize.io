@@ -1,7 +1,7 @@
 ---
 id: README
-title: Java Specific Notebook
+title: Language Specific Notes
 sidebar_label: Introduction
 ---
 
-## Intro
+This page will be language specific.

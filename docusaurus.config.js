@@ -29,32 +29,32 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Style Guide',
-              to: 'docs/DataStructure/List',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2',
-            },
-          ],
-        },
-        {
           title: 'Links',
           items: [
             {
-              label: 'Tableau Public',
-              href: 'https://public.tableau.com',
+              label: 'Docusaurus',
+              href: 'https://docusaurus.io',
+            },
+            {
+              label: 'PyTutor',
+              href: 'http://pythontutor.com'
             }
           ],
         },
         {
-          title: 'Author Info',
+          title: 'Resources',
           items: [
             {
-              label: 'Website',
+              label: 'Princeton Algorithms 4th Edition',
+              to: 'https://algs4.cs.princeton.edu/home',
+            }
+          ],
+        },
+        {
+          title: 'Follow Author',
+          items: [
+            {
+              label: 'Carl Liu',
               href: 'http://www.carlrocks.com',
             },
             {

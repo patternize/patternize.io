@@ -1,7 +1,7 @@
 ---
 id: list
-title: List
-sidebar_label: List
+title: List (Interface)
+sidebar_label: List (Interface)
 ---
 
 ## Iterate through Values:

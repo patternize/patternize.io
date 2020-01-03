@@ -68,7 +68,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/DataStructure/list')}>
+              to={useBaseUrl('/docs/DataStructure/README')}>
               Get Started
             </Link>
           </div>

@@ -10,11 +10,11 @@ module.exports = {
   	'Language/README',
   	{
   		type: 'category',
-  		label: 'Java',
+  		label: 'Java Data Structure',
   		items: [
+        'Language/Java/README',
     		'Language/Java/list',
-    		'Language/Java/map',
-    		'Language/Java/bit_manipulation'
+    		'Language/Java/map'
     	]
   	}
   ],
@@ -35,8 +35,15 @@ module.exports = {
   			'Patterns/Backtracking/README',
   			'Patterns/Backtracking/Permutation',
   			'Patterns/Backtracking/ExpressionPuzzle',
-		]
-  	}
+		  ]
+  	},
+    {
+      type: 'category',
+      label: 'Bit Manipulation',
+      items: [
+        'Patterns/BitManipulation/README'
+      ]
+    }
   ]
 };
 
