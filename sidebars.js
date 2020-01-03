@@ -48,6 +48,10 @@ module.exports = {
           label: 'Map',
           items: [
             'Language/Java/Map/Interface',
+            'Language/Java/Map/HashMap',
+            'Language/Java/Map/HashTable',
+            'Language/Java/Map/TreeMap',
+            'Language/Java/Map/LinkedHashMap',
             'Language/Java/Map/Runtime'
           ]
         }
