@@ -1,11 +1,15 @@
 ---
 id: README
-title: Backtracking
-sidebar_label: Introduction
+title: Introduction to Backtracking
+sidebar_label: Introduction to Backtracking
 ---
+
+import Backtracking from './backtracking.js'
 
 ## Backtracking
 >"Backtracking can be defined as a general algorithmic technique that considers searching every possible combination in order to solve a computational problem."
+
+<Backtracking width={window.innerWidth > 500 ? window.innerWidth * 0.65: 500} height={700}/>
 
 ## Intuitions of A Backtracking Problem
 1. The problem is about combinations, combinatorics, and permutation. Usually the problem has multiple possible solutions and it asks you to "list" or "enumerate" all the possible solutions.

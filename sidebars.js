@@ -73,7 +73,14 @@ module.exports = {
   		label: 'Backtracking',
   		items: [
   			'Patterns/Backtracking/README',
-  			'Patterns/Backtracking/Permutation',
+            {
+                type: 'category',
+                label: 'Permutation',
+                items: [
+
+                    'Patterns/Backtracking/Permutation/Permutation'
+                ]
+            },
   			'Patterns/Backtracking/ExpressionPuzzle',
 		  ]
   	},
