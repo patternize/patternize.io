@@ -1,7 +1,7 @@
 ---
 id: README
-title: Patterns
-sidebar_label: Introduction
+title: Preface
+sidebar_label: Preface
 ---
 
 ## Intro
