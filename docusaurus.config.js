@@ -82,4 +82,9 @@ module.exports = {
       },
     ],
   ],
+  // for deployments
+  url: 'https://patternize.github.io',
+  baseUrl: '/',
+  projectName: 'patternize.github.io',
+  organizationName: 'patternize'
 };
