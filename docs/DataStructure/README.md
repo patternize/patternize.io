@@ -1,7 +1,7 @@
 ---
 id: README
-title: Data Structures
-sidebar_label: Introduction
+title: Preface
+sidebar_label: Preface
 ---
 
-## Intro
+## Preface
