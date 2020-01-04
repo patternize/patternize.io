@@ -1,6 +1,6 @@
 ---
 id: Interface
-title: Interface
+title: Set Interface
 sidebar_label: Interface
 ---
 

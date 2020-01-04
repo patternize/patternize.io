@@ -1,6 +1,6 @@
 ---
 id: Interface
-title: Interface
+title: Map Interface
 sidebar_label: Interface
 ---
 

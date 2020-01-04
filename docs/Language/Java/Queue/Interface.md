@@ -1,6 +1,6 @@
 ---
 id: Interface
-title: Interface
+title: Queue Interface
 sidebar_label: Interface
 ---
 

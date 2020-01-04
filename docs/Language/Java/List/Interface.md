@@ -1,6 +1,6 @@
 ---
 id: Interface
-title: Interface
+title: List Interface
 sidebar_label: Interface
 ---
 
