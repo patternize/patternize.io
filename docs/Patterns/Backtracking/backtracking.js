@@ -197,8 +197,6 @@ function ParentNode({ node }) {
 }
 
 export default ({
-                    width,
-                    height,
                     margin = {
                         top: 30,
                         left: 30,
@@ -206,6 +204,12 @@ export default ({
                         bottom: 80
                     }
                 }) => {
+    // this is boilerplate code, because other with `yarn build` will have a 'window' not defined error since this is backend rendering
+    if (typeof window === 'undefined') {
+        global.window = {}
+    }
+    const width= window.innerWidth > 500 ? window.innerWidth * 0.65: 500;
+    const height=700;
     const data = hierarchy(tree);
     const xMax = height - margin.top - margin.bottom;
     const yMax = width - margin.left - margin.right;
