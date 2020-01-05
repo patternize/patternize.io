@@ -20,7 +20,7 @@ const bg = '#2a404e';
 const bg_white = 'white'
 
 const tree = {
-    "name": "T",
+    "name": "🥃",
     "children": [{
         "name": "Bourbon",
         "children": [

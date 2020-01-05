@@ -15,6 +15,11 @@ For expression "ABC" + "ABC" = "DEA"
 The assignment {'A': 2, 'B': 3, 'C': 1, 'D': 4, 'E': 6} will make the expression true:
 if we subsitute the numbers to their according letters:
 the expression becomes 231  +  231  =  462 (which is valid)
+
+The other assignments could be:
+432 + 432 = 864
+281 + 281 = 562
+271 + 271 = 542
 ```
 
 Ex.2:

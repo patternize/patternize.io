@@ -6,30 +6,40 @@ sidebar_label: Introduction to Backtracking
 
 import Backtracking from './backtracking.js'
 
-## Backtracking
->"Backtracking can be defined as a general algorithmic technique that considers searching every possible combination in order to solve a computational problem."
+
+Have you ever run into these problems in your daily life?
+- For my luggage lock, what are some of the interesting password combination I can come up with? 🔐
+- For my living room, how many possible ways I can rearrange my sofa, table, speakers and TV? 📺
+- Or, yes! this is a good one, given a set of liquors and juice, what are possible cocktails I can come up with? 🍹
 
 <Backtracking/>
+
+## Backtracking
+>"Backtracking can be defined as a general algorithmic technique that considers searching every possible combination in order to solve a computational problem."
 
 ## Intuitions of A Backtracking Problem
 1. The problem is about combinations, combinatorics, and permutation. Usually the problem has multiple possible solutions and it asks you to "list" or "enumerate" all the possible solutions.
 2. When you try to come up with an combination of both iteration and recursion. For example, you need to have a loop inside of a recursive function, and the loop's range depends on the function parameters:
 
 ```java
-void recursiveFunction(int x, int y, int z){
+void someRecursiveFunction(int x, int y){
+    /* do something... */
 	for(int i = 0; i < y; i++){
-		recursiveFunction(x, i, z+1);
+	    /* do something in the for loop... */
+	    // call someRecursiveFunction with updated parameters
+		someRecursiveFunction(x, y+i);
 	}
+	/* do something else... */
 }
 ```
 
 3. When you can prove that the solution needs a runtime of <img src="https://render.githubusercontent.com/render/math?math=O(n!)"/>
 
-## Backtracking Template
+## Backtracking Generalized Solution Template
 
 ```java
 class Solution {
-    // Declare private data structures:
+    /* Declare private data structures: */
     private ArrayList<Integer> solutions;
     public List<List<Integer>> permute(int[] nums) {
         // declare private data structures
