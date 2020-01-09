@@ -14,6 +14,7 @@ module.exports = {
             label: 'Sorting',
             items:[
                 'Algorithms/Sorting/BubbleSort',
+                'Algorithms/Sorting/OddEvenSort',
                 'Algorithms/Sorting/SelectionSort',
                 'Algorithms/Sorting/InsertionSort',
                 'Algorithms/Sorting/MergeSort',

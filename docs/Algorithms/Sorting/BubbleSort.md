@@ -39,8 +39,5 @@ void bubbleSort(int arr[]) {
     - this property is good to find k largest elements - use outer loop of bubble sort for k times
 
 ## Variants
-- [Odd Even Sort / Brick Sort](https://www.geeksforgeeks.org/odd-even-sort-brick-sort/):
-    - compare all (odd,even) indexed pairs of adjacent elements
-    - if a pair is in the wrong order, switch elements
-    - then alternate between (odd,even) and (even,odd) pairs
+- [Odd Even Sort / Brick Sort](https://www.geeksforgeeks.org/odd-even-sort-brick-sort/)
 - [Cocktail Sort](https://www.geeksforgeeks.org/cocktail-sort/)
