@@ -9,6 +9,14 @@
 
 - This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator. Thanks to Facebook OSS Community.
 
+## Inspirations
+Here are the projects that inspired me, highly recommend to check out their work
+
+- https://github.com/yangshun/tech-interview-handbook
+- https://github.com/yangshun/lago
+- https://github.com/yangshun/front-end-interview-handbook
+- https://github.com/algorithm-visualizer/algorithm-visualizer
+
 ### Set up the project on your local environment
 - Pre-requisit: make sure you have yarn installed on your local environment
 - Then run:
