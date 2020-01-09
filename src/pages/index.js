@@ -27,7 +27,7 @@ const features = [
   },
   {
     title: <>Think Easy</>,
-    imageUrl: 'img/brain.png',
+    imageUrl: 'img/brain.svg',
     description: (
       <>
         The goal of this project is to help you see and understand complicated Computer Science easily.

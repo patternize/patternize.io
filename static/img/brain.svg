@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#68bc36"/>
+      <stop offset=".85" stop-color="#457e24"/>
+      <stop offset="1" stop-color="#1d3410"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(75 141.5) scale(38.5)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#68bc36"/>
+      <stop offset=".25" stop-color="#457e24"/>
+      <stop offset="1" stop-color="#1d3410"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient_2" gradientTransform="translate(310 98.5) scale(38.5)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_3" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#68bc36"/>
+      <stop offset=".6" stop-color="#457e24"/>
+      <stop offset="1" stop-color="#1d3410"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient_3" gradientTransform="translate(202.5 191) scale(38.5)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#68bc36"/>
+      <stop offset=".75" stop-color="#457e24"/>
+      <stop offset="1" stop-color="#1d3410"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_4" xl:href="#Gradient_4" gradientTransform="translate(134 246) scale(38.5)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#68bc36"/>
+      <stop offset=".99" stop-color="#457e24"/>
+      <stop offset="1" stop-color="#1d3410"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_5" xl:href="#Gradient_5" gradientTransform="translate(15 250) scale(38.5)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_6" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#68bc36"/>
+      <stop offset=".8" stop-color="#457e24"/>
+      <stop offset="1" stop-color="#1d3410"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_6" xl:href="#Gradient_6" gradientTransform="translate(100.5 357) scale(38.5)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#68bc36"/>
+      <stop offset="1" stop-color="#1d3410"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_7" xl:href="#Gradient_7" gradientTransform="translate(249.5 335) scale(38.5)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#68bc36"/>
+      <stop offset=".01" stop-color="#457e24"/>
+      <stop offset="1" stop-color="#1d3410"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_8" xl:href="#Gradient_8" gradientTransform="translate(434 255.5) scale(38.5)"/>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.12.1 
+    <dc:date>2020-01-09 15:54:05 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill-opacity="1" fill="none" stroke="none" stroke-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Line_27">
+        <path d="M 325 425.5 L 368.6082 425.5266 L 347.6389 375.23727 L 411.9155 335.92303 L 457.29167 257.70255 L 330.978 95.46875 L 92.42187 140.86227 L 34.48206 249.13484 L 118.59664 359.89005 L 267.9456 341.1603 L 324.2882 424.22454 L 347.4595 375.1389 L 269.7772 340.07523 L 345.2141 258.94387 L 225.99826 193.13657 L 154.47049 248.31887 L 269.07697 339.1985 L 226.50463 195.63079 L 92.88484 140.36748 L 154.8698 248.51852 L 37.502894 250.16493 L 118.70949 359.66725 L 153.40856 248.3015 L 223.9236 188.97859 L 329.2824 98.88021 L 345.20833 255.95775 L 451.7361 258.3449 L 372.55787 310.3501 L 276.01852 337.5955" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Graphic_29">
+        <ellipse cx="94.25" cy="141.5" rx="19.2500307596115" ry="19.000030360136" fill="url(#Obj_Gradient)"/>
+        <ellipse cx="94.25" cy="141.5" rx="19.2500307596115" ry="19.000030360136" stroke="#2f3846" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_31">
+        <ellipse cx="329.25" cy="98.5" rx="19.2500307596115" ry="19.000030360136" fill="url(#Obj_Gradient_2)"/>
+        <ellipse cx="329.25" cy="98.5" rx="19.2500307596115" ry="19.000030360136" stroke="#2f3846" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_32">
+        <ellipse cx="221.75" cy="191" rx="19.2500307596115" ry="19.000030360136" fill="url(#Obj_Gradient_3)"/>
+        <ellipse cx="221.75" cy="191" rx="19.2500307596115" ry="19.000030360136" stroke="#2f3846" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_33">
+        <ellipse cx="153.25" cy="246" rx="19.2500307596115" ry="19.000030360136" fill="url(#Obj_Gradient_4)"/>
+        <ellipse cx="153.25" cy="246" rx="19.2500307596115" ry="19.000030360136" stroke="#2f3846" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_34">
+        <ellipse cx="34.25" cy="250" rx="19.2500307596115" ry="19.000030360136" fill="url(#Obj_Gradient_5)"/>
+        <ellipse cx="34.25" cy="250" rx="19.2500307596115" ry="19.000030360136" stroke="#2f3846" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_35">
+        <ellipse cx="119.75" cy="357" rx="19.2500307596115" ry="19.000030360136" fill="url(#Obj_Gradient_6)"/>
+        <ellipse cx="119.75" cy="357" rx="19.2500307596115" ry="19.000030360136" stroke="#2f3846" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_36">
+        <ellipse cx="268.75" cy="335" rx="19.2500307596115" ry="19.000030360136" fill="url(#Obj_Gradient_7)"/>
+        <ellipse cx="268.75" cy="335" rx="19.2500307596115" ry="19.000030360136" stroke="#2f3846" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_38">
+        <ellipse cx="453.25" cy="255.5" rx="19.2500307596115" ry="19.000030360136" fill="url(#Obj_Gradient_8)"/>
+        <ellipse cx="453.25" cy="255.5" rx="19.2500307596115" ry="19.000030360136" stroke="#2f3846" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+    </g>
+  </g>
+</svg>
