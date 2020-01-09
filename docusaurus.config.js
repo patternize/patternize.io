@@ -14,7 +14,8 @@ module.exports = {
         src: 'img/logo.png',
       },
       links: [
-        {to: 'docs/DataStructure/README', label: 'Data Structure', position: 'left'},
+          {to: 'docs/Algorithms/README', label: 'Algorithms', position: 'left'},
+          {to: 'docs/DataStructure/README', label: 'Data Structure', position: 'left'},
         {to: 'docs/Patterns/README', label: 'Patterns', position: 'left'},
         {to: 'docs/Language/README', label: 'Language', position: 'left'},
         // {to: 'blog', label: 'Blog', position: 'left'},

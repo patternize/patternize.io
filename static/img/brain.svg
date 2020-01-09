@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#68bc36"/>
+      <stop offset=".85" stop-color="#457e24"/>
+      <stop offset="1" stop-color="#1d3410"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(127.59936 147.36336) rotate(-160) scale(57.677074)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#68bc36"/>
+      <stop offset=".75" stop-color="#457e24"/>
+      <stop offset="1" stop-color="#1d3410"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient_2" gradientTransform="translate(305.6324 116.28575) rotate(-28) scale(60.85886)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_3" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#68bc36"/>
+      <stop offset=".99" stop-color="#457e24"/>
+      <stop offset="1" stop-color="#1d3410"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient_3" gradientTransform="translate(46.95055 243.3153) rotate(171) scale(34.323684)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#68bc36"/>
+      <stop offset=".8" stop-color="#457e24"/>
+      <stop offset="1" stop-color="#1d3410"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_4" xl:href="#Gradient_4" gradientTransform="translate(134.52767 333.34252) rotate(113) scale(59.00562)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#68bc36"/>
+      <stop offset=".6" stop-color="#457e24"/>
+      <stop offset="1" stop-color="#1d3410"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_5" xl:href="#Gradient_5" gradientTransform="translate(247.22436 319.13215) rotate(36) scale(48.88808)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_6" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#68bc36"/>
+      <stop offset="1" stop-color="#1d3410"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_6" xl:href="#Gradient_6" gradientTransform="translate(431.2839 250.4732) rotate(11) scale(42.2077)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#68bc36"/>
+      <stop offset=".01" stop-color="#457e24"/>
+      <stop offset="1" stop-color="#1d3410"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_7" xl:href="#Gradient_7" gradientTransform="translate(382.6324 393.21425) rotate(28) scale(60.85886)"/>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.12.1 
+    <dc:date>2020-01-09 16:01:35 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_29">
+        <circle cx="100.5" cy="137.5" r="22.5000359527927" fill="url(#Obj_Gradient)"/>
+        <circle cx="100.5" cy="137.5" r="22.5000359527927" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_31">
+        <circle cx="332.5" cy="102" r="22.5000359527927" fill="url(#Obj_Gradient_2)"/>
+        <circle cx="332.5" cy="102" r="22.5000359527927" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_32">
+        <circle cx="227.5" cy="197" r="25.0000399475474" fill="#68bc36"/>
+        <circle cx="227.5" cy="197" r="25.0000399475474" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_34">
+        <circle cx="30" cy="246" r="15.0000239685284" fill="url(#Obj_Gradient_3)"/>
+        <circle cx="30" cy="246" r="15.0000239685284" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_35">
+        <circle cx="123" cy="360.5" r="22.5000359527927" fill="url(#Obj_Gradient_4)"/>
+        <circle cx="123" cy="360.5" r="22.5000359527927" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_36">
+        <circle cx="267" cy="333.5" r="17.5000279632832" fill="url(#Obj_Gradient_5)"/>
+        <circle cx="267" cy="333.5" r="17.5000279632832" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Graphic_38">
+        <circle cx="452" cy="254.5" r="18.0000287622342" fill="url(#Obj_Gradient_6)"/>
+        <circle cx="452" cy="254.5" r="18.0000287622342" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_39">
+        <line x1="125.21401" y1="133.71833" x2="307.786" y2="105.78167" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_40">
+        <line x1="39.536865" y1="231.3227" x2="86.87591" y2="158.46758" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_41">
+        <line x1="41.033995" y1="259.58486" x2="107.23715" y2="341.09305" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_42">
+        <line x1="247.34068" y1="337.18612" x2="147.57415" y2="355.89235" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_43">
+        <line x1="433.142" y1="262.55288" x2="285.39805" y2="325.64353" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_44">
+        <line x1="313.9612" y1="118.7732" x2="247.89267" y2="178.54949" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_45">
+        <line x1="202.59075" y1="185.32992" x2="123.14478" y2="148.10917" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_46">
+        <line x1="200.80522" y1="203.623" x2="46.98759" y2="241.78536" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Graphic_47">
+        <circle cx="409.5" cy="407.5" r="22.5000359527927" fill="url(#Obj_Gradient_7)"/>
+        <circle cx="409.5" cy="407.5" r="22.5000359527927" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_48">
+        <line x1="387.30726" y1="395.97535" x2="284.7542" y2="342.7197" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_49">
+        <line x1="416.19227" y1="383.40783" x2="446.51234" y2="274.25558" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_50">
+        <line x1="212.68697" y1="220.17637" x2="136.46639" y2="339.43058" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_51">
+        <line x1="347.9214" y1="121.68004" x2="439.35444" y2="238.36236" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_52">
+        <line x1="432.1379" y1="249.41283" x2="254.14425" y2="203.82425" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+      <g id="Line_53">
+        <line x1="261.43952" y1="314.28467" x2="235.14566" y2="223.42109" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      </g>
+    </g>
+  </g>
+</svg>

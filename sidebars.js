@@ -6,6 +6,29 @@
  */
 
 module.exports = {
+
+    'Algorithms': [
+        'Algorithms/README',
+        {
+            type: 'category',
+            label: 'Sorting',
+            items:[
+                'Algorithms/Sorting/BubbleSort',
+                'Algorithms/Sorting/OddEvenSort',
+                'Algorithms/Sorting/SelectionSort',
+                'Algorithms/Sorting/InsertionSort',
+                'Algorithms/Sorting/MergeSort',
+            ]
+        }
+    ],
+    'Data Structure': [
+        'DataStructure/README',
+        {
+            type: 'category',
+            label: 'Advanced',
+            items:['DataStructure/Advanced/vlist']
+        }
+    ],
   'Language': [
     'Language/README',
     {
@@ -57,14 +80,6 @@ module.exports = {
         }
       ]
     }
-  ],
-  'Data Structure': [
-  	'DataStructure/README',
-  	{
-  		type: 'category',
-  		label: 'Advanced',
-  		items:['DataStructure/Advanced/vlist']
-  	}
   ],
   'Patterns': [
   	'Patterns/README',

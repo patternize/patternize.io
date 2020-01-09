@@ -13,7 +13,7 @@ sidebar_label: Introduction
     32 >> 5 === log(32)/log(2) 
 
 
-## Count Ones
+## Count Ones In Binary Representation
 - `n&(n-1)` rule: is used when you want to quickly count how many `1s` in your binary number, every-time you do `n&(n-1)`, a `1` in your binary form will be removed:
 
 ```java
