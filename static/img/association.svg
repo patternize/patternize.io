@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#68bc36"/>
+      <stop offset=".75" stop-color="#4f7d34"/>
+      <stop offset="1" stop-color="#333"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(130 309.54216) rotate(90) scale(65)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#68bc36"/>
+      <stop offset=".75" stop-color="#457e24"/>
+      <stop offset="1" stop-color="#1d3410"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient_2" gradientTransform="translate(123.46218 196.57783) rotate(-80) scale(75.299635)"/>
+    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient" gradientTransform="translate(370 309.54216) rotate(90) scale(65)"/>
+    <linearGradient id="Obj_Gradient_4" xl:href="#Gradient_2" gradientTransform="translate(363.46218 196.57783) rotate(-80) scale(75.299635)"/>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.12.1 
+    <dc:date>2020-01-09 15:45:52 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill-opacity="1" fill="none" stroke="none" stroke-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_7">
+        <circle cx="130" cy="342.04216" r="32.5000519318116" fill="url(#Obj_Gradient)"/>
+        <circle cx="130" cy="342.04216" r="32.5000519318116" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Graphic_8">
+        <circle cx="130" cy="159.5" r="32.5000519318116" fill="url(#Obj_Gradient_2)"/>
+        <circle cx="130" cy="159.5" r="32.5000519318116" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Graphic_11">
+        <circle cx="370" cy="342.04216" r="32.5000519318116" fill="url(#Obj_Gradient_3)"/>
+        <circle cx="370" cy="342.04216" r="32.5000519318116" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Graphic_12">
+        <circle cx="370" cy="159.5" r="32.5000519318117" fill="url(#Obj_Gradient_4)"/>
+        <circle cx="370" cy="159.5" r="32.5000519318117" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Line_13">
+        <line x1="485.5263" y1="249.1228" x2="15.32258" y2="252.41935" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Line_14">
+        <line x1="167.50002" y1="342.04216" x2="332.5" y2="342.04216" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Line_18">
+        <line x1="332.5" y1="159.5" x2="167.50002" y2="159.5" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Line_26">
+        <line x1="297.5259" y1="70" x2="203.323" y2="71" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+      <g id="Line_28">
+        <line x1="297.10145" y1="430.54216" x2="202.89855" y2="431.54216" stroke="#2f3845" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 const features = [
   {
     title: <>See Pattern</>,
-    imageUrl: 'img/pattern.png',
+    imageUrl: 'img/pattern.svg',
     description: (
       <>
         Patternize.io will help you to visualize data structures and algorithms in an intuitive way.
@@ -18,7 +18,7 @@ const features = [
   },
   {
     title: <>Create Associations</>,
-    imageUrl: 'img/association.png',
+    imageUrl: 'img/association.svg',
     description: (
       <>
         Patternize.io has will create associations between topics, which creates a path for you to walk through a variety of topics.
