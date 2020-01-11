@@ -11,13 +11,13 @@ module.exports = {
       title: 'Patternize.io',
       logo: {
         alt: 'Patternize.io',
-        src: 'img/logo.png',
+        src: 'img/logo.svg',
       },
       links: [
           {to: 'docs/Algorithms/README', label: 'Algorithms', position: 'left'},
-          {to: 'docs/DataStructure/README', label: 'Data Structure', position: 'left'},
+          {to: 'docs/DataStructures/README', label: 'Data Structures', position: 'left'},
         {to: 'docs/Patterns/README', label: 'Patterns', position: 'left'},
-        {to: 'docs/Language/README', label: 'Language', position: 'left'},
+        {to: 'docs/Languages/README', label: 'Language', position: 'left'},
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/patternize/patternize.io',
