@@ -25,6 +25,19 @@ module.exports = {
         'DataStructures/README',
         {
             type: 'category',
+            label: 'Basic',
+            items: [
+                {
+                    type: 'category',
+                    label: 'Binary Tree',
+                    items: [
+                        "QuestionBank/Leetcode/LC103"
+                    ]
+                }
+            ]
+        },
+        {
+            type: 'category',
             label: 'Advanced',
             items: ['DataStructures/Advanced/vlist']
         }
