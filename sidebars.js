@@ -12,6 +12,33 @@ module.exports = {
         {
             type: 'category',
             label: 'Sorting',
+            items:[
+                'Algorithms/Sorting/BubbleSort',
+                'Algorithms/Sorting/OddEvenSort',
+                'Algorithms/Sorting/SelectionSort',
+                'Algorithms/Sorting/InsertionSort',
+                'Algorithms/Sorting/MergeSort',
+            ]
+        }
+    ],
+    'Data Structure': [
+        'DataStructure/README',
+        {
+            type: 'category',
+            label: 'Advanced',
+            items:['DataStructure/Advanced/vlist']
+        }
+    ],
+  'Language': [
+    'Language/README',
+    {
+      type: 'category',
+      label: 'Java Data Structure',
+      items: [
+        'Language/Java/README',
+        {
+            type: 'category',
+            label: 'Sorting',
             items: [
                 'Algorithms/Sorting/BubbleSort',
                 'Algorithms/Sorting/OddEvenSort',
@@ -113,5 +140,33 @@ module.exports = {
                 'QuestionBank/Leetcode/LC310'
             ]
         }
-    ]
+      ]
+    }
+  ],
+  'Patterns': [
+  	'Patterns/README',
+  	{
+  		type: 'category',
+  		label: 'Backtracking',
+  		items: [
+  			'Patterns/Backtracking/README',
+            {
+                type: 'category',
+                label: 'Permutation',
+                items: [
+
+                    'Patterns/Backtracking/Permutation/Permutation'
+                ]
+            },
+  			'Patterns/Backtracking/ExpressionPuzzle',
+		  ]
+  	},
+    {
+      type: 'category',
+      label: 'Bit Manipulation',
+      items: [
+        'Patterns/BitManipulation/README'
+      ]
+    }
+  ]
 };
