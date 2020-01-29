@@ -4,7 +4,7 @@ title: Introduction to Backtracking
 sidebar_label: Introduction to Backtracking
 ---
 
-import Backtracking from './backtracking.js'
+import { Hierarchy } from '@patternize/components'
 
 
 Have you ever run into these problems in your daily life?
@@ -12,7 +12,93 @@ Have you ever run into these problems in your daily life?
 - For my living room, how many possible ways I can rearrange my sofa, table, speakers and TV? 📺
 - Or, yes! this is a good one, given a set of liquors and juice, what are possible cocktails I can come up with? 🍹
 
-<Backtracking/>
+export const Backtracking = () => {
+    const tree = {
+        "name": "🥃",
+        "children": [{
+            "name": "Bourbon",
+            "children": [
+                { "name": "Mint",
+                    "children": [{"name": "Mint Julep"}]
+                },
+                { "name": "Vermouth",
+                    "children": [{
+                        "name": "Manhattan"
+                    }]
+                },
+                { "name": "Lime",
+                    "children": [{
+                        "name": "Cherry",
+                        "children": [{
+                            "name": "Whiskey Sour"
+                        }]
+                    }]
+                },
+                { "name": "Ice Cube",
+                    "children": [{
+                        "name": "Orange Peel",
+                        "children": [{
+                            "name": "Old Fashioned"
+                        }]
+                    }]
+                }
+            ]},{
+            "name": "Vodka",
+            "children": [
+                { "name": "Tomato",
+                    "children": [{
+                        "name": "Bloody Mary"
+                    }]
+                },
+                { "name": "Kahlua",
+                    "children": [{
+                        "name": "Cream",
+                        "children": [{
+                            "name": "White Russian"
+                        }]
+                    }]
+                },
+                { "name": "Cranberry",
+                    "children": [{
+                        "name": "Grapefruit",
+                        "children": [{
+                            "name": "Sea Breeze"
+                        }, {
+                            "name": "Lime",
+                            "children": [{"name": "Cosmopolitan"}]
+                        }]
+                    }]
+                }
+            ]},{
+            "name": "Rum",
+            "children": [
+                {
+                    "name": "Pineapple",
+                    "children": [{
+                        "name": "Coconut",
+                        "children": [{
+                            "name": "Pina Colada"
+                        }]
+                    }]
+                },
+                {
+                    "name": "Lime",
+                    "children": [{
+                        "name": "Mojito"
+                    },{
+                        "name": "Cola",
+                        "children": [{
+                            "name": "Cuba Libre"
+                        }]
+                    }]
+                }
+            ]}
+        ],
+    };
+    return <Hierarchy tree={tree}/>
+}
+
+<Backtracking />
 
 ## Backtracking
 >"Backtracking can be defined as a general algorithmic technique that considers searching every possible combination in order to solve a computational problem."

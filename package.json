@@ -11,12 +11,8 @@
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.40",
     "@docusaurus/preset-classic": "^2.0.0-alpha.40",
-    "@vx/gradient": "^0.0.193-alpha.1",
-    "@vx/group": "^0.0.193-alpha.1",
-    "@vx/hierarchy": "^0.0.193-alpha.1",
-    "@vx/shape": "^0.0.193-alpha.1",
+    "@patternize/components": "^0.0.4",
     "classnames": "^2.2.6",
-    "d3-hierarchy": "^1.1.9",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
