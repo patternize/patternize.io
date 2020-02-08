@@ -4,8 +4,38 @@ title: Selection Sort
 sidebar_label: Selection Sort
 ---
 
+import { Array, BarChart, Button } from '@patternize/components';
+
 ## Idea
 The idea is to select the smallest element of remaining array and then swap it to the front.
+
+## Visualization
+
+export const SelectionSort = ({ data }) => {
+    const [index, setIndex] = React.useState(0);
+    return (
+        <div className={'controller'}>
+            <BarChart data={data[index]} />
+            <br/>
+            <Button onClick={() => setIndex(index-1)} disabled={index == 0}>
+                Previous
+            </Button>
+            <Button onClick={() => setIndex(index+1)} disabled={index == data.length - 1}>
+                Next
+            </Button>
+        </div>
+    )
+};
+
+<SelectionSort data={[
+          [29, 72, 98, 13, 87, 66, 52, 51, 36],
+          [13, 72, 98, 29, 87, 66, 52, 51, 36],
+          [13, 29, 98, 72, 87, 66, 52, 51, 36],
+          [13, 29, 36, 72, 87, 66, 52, 51, 98],
+          [13, 29, 36, 51, 87, 66, 52, 72, 98],
+          [13, 29, 36, 51, 52, 66, 87, 72, 98],
+          [13, 29, 36, 51, 52, 66, 72, 87, 98],
+      ]}/>
 
 ## Implementation
 - scan array, find the minimum element's index min_idx
