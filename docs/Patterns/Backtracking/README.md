@@ -95,7 +95,7 @@ export const Backtracking = () => {
             ]}
         ],
     };
-    return <Hierarchy tree={tree}/>
+    return <>{typeof window !== 'undefined' &&  <TreeChart data={tree}/>}</>
 }
 
 <Backtracking />
