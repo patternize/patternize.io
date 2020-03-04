@@ -8,7 +8,6 @@
 module.exports = {
 
     'Algorithms': [
-        'Algorithms/README',
         {
             type: 'category',
             label: 'Sorting',
@@ -22,7 +21,6 @@ module.exports = {
         }
     ],
     'Data Structure': [
-        'DataStructures/README',
         {
             type: 'category',
             label: 'Basic',
@@ -39,11 +37,10 @@ module.exports = {
         {
             type: 'category',
             label: 'Advanced',
-            items: ['DataStructures/Advanced/vlist']
+            items: ['DataStructures/Advanced/VList']
         }
     ],
     'Language': [
-        'Language/README',
         {
             type: 'category',
             label: 'Java Data Structure',
@@ -95,7 +92,6 @@ module.exports = {
         }
     ],
     'Patterns': [
-        'Patterns/README',
         {
             type: 'category',
             label: 'Backtracking',
