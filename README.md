@@ -5,17 +5,7 @@
 
 # Patternize.io
 
-- View the website now: [Patternize.io](http://patternize.github.io/)
-
-- This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator. Thanks to Facebook OSS Community.
-
-## Inspirations
-Here are the projects that inspired me, highly recommend to check out their work
-
-- https://github.com/yangshun/tech-interview-handbook
-- https://github.com/yangshun/lago
-- https://github.com/yangshun/front-end-interview-handbook
-- https://github.com/algorithm-visualizer/algorithm-visualizer
+- View the website: [Patternize.io](http://patternize.github.io/)
 
 ### Set up the project on your local environment
 - Pre-requisit: make sure you have yarn installed on your local environment
@@ -62,3 +52,13 @@ $ cp -a build/ <your-repo-dir>/
 
 // or you could figure out a better way to do this, because cp command will not delete deprecated files. Once in a while, you will have to wipe the repo and regenerate, then deploy a fresh build
 ```
+
+
+## Inspirations
+- This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator. Thanks to Facebook OSS Community.
+- Here are the projects that inspired me, highly recommend to check out their work!
+- https://github.com/yangshun/tech-interview-handbook
+- https://github.com/yangshun/lago
+- https://github.com/yangshun/front-end-interview-handbook
+- https://github.com/algorithm-visualizer/algorithm-visualizer
+
