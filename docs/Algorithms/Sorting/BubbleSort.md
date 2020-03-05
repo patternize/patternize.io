@@ -4,10 +4,38 @@ title: Bubble Sort
 sidebar_label: Bubble Sort
 ---
 
+import { Array, BarChart, Button } from '@patternize/components';
+
 ## Idea 
 - compare each item wth the item next to it, and swap positions if required
 - the largest element will be bubbled to the end of the array
 - algorithm repeats until we have a pass without swapping any elements
+
+## Visualization
+
+export const BubbleSort = ({ data }) => {
+    const [index, setIndex] = React.useState(0);
+    return (
+        <div className={'controller'}>
+            <Array data={data[index]} />
+            <BarChart data={data[index]} />
+            <br/>
+            <Button onClick={() => setIndex(index-1)} disabled={index == 0}>
+                Previous
+            </Button>
+            <Button onClick={() => setIndex(index+1)} disabled={index == data.length - 1}>
+                Next
+            </Button>
+        </div>
+    )
+};
+
+<BubbleSort data={[
+        [5,1,4,2,8],
+        [1,5,4,2,8],
+        [1,4,5,2,8],
+        [1,4,2,5,8],
+        [1,2,4,5,8]]}/>
 
 ## Implementation
 - for every step, move largest element in left unsorted array to the end; in this caes, avoid inner loop to iterate through right sorted subarray
