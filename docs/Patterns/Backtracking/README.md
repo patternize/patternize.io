@@ -4,7 +4,7 @@ title: Introduction to Backtracking
 sidebar_label: Introduction to Backtracking
 ---
 
-import { Hierarchy } from '@patternize/components'
+import { TreeChart } from '@patternize/components'
 
 
 Have you ever run into these problems in your daily life?

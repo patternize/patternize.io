@@ -1,11 +1,9 @@
 module.exports = {
   title: "Patternize.io",
   tagline: "Patternize Algorithms and Data Structure",
-  url: "http://patternize.github.io",
   baseUrl: "/",
   favicon: "img/favicon.ico",
   organizationName: "Patternize", // Usually your GitHub org/user name.
-  projectName: "Patternize.io", // Usually your repo name.
   themeConfig: {
     navbar: {
       title: "Patternize.io",
