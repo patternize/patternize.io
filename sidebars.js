@@ -104,6 +104,17 @@ module.exports = {
     },
     {
       type: "category",
+      label: "Dynamic Programming",
+      items: [
+        {
+          type: "category",
+          label: "Coordinate Based",
+          items: ["Patterns/DynamicProgramming/Coordinate/intro"]
+        }
+      ]
+    },
+    {
+      type: "category",
       label: "Bit Manipulation",
       items: ["Patterns/BitManipulation/README"]
     },

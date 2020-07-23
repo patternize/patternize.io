@@ -13,6 +13,12 @@ module.exports = {
       },
       links: [
         {
+          to: "docs/Patterns/Backtracking/README",
+          label: "Patterns",
+          position: "left",
+          activeBasePath: 'docs/Patterns'
+        },
+        {
           to: "docs/Algorithms/Sorting/BubbleSort",
           label: "Algorithms",
           position: "left",
@@ -24,12 +30,6 @@ module.exports = {
           position: "left",
           activeBasePath: 'docs/DataStructures'
 
-        },
-        {
-          to: "docs/Patterns/Backtracking/README",
-          label: "Patterns",
-          position: "left",
-          activeBasePath: 'docs/Patterns'
         },
         {
           to: "docs/Language/Java/README",
