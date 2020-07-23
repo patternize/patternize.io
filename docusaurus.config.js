@@ -15,22 +15,27 @@ module.exports = {
         {
           to: "docs/Algorithms/Sorting/BubbleSort",
           label: "Algorithms",
-          position: "left"
+          position: "left",
+          activeBasePath: 'docs/Algorithms'
         },
         {
           to: "docs/DataStructures/Advanced/VList",
           label: "Data Structures",
-          position: "left"
+          position: "left",
+          activeBasePath: 'docs/DataStructures'
+
         },
         {
           to: "docs/Patterns/Backtracking/README",
           label: "Patterns",
-          position: "left"
+          position: "left",
+          activeBasePath: 'docs/Patterns'
         },
         {
           to: "docs/Language/Java/README",
           label: "Language",
-          position: "left"
+          position: "left",
+          activeBasePath: 'docs/Language'
         },
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
