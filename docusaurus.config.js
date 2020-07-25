@@ -29,7 +29,6 @@ module.exports = {
           label: "Data Structures",
           position: "left",
           activeBasePath: 'docs/DataStructures'
-
         },
         {
           to: "docs/Language/Java/README",

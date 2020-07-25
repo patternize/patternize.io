@@ -109,7 +109,10 @@ module.exports = {
         {
           type: "category",
           label: "Coordinate Based",
-          items: ["Patterns/DynamicProgramming/Coordinate/intro"]
+          items: [
+            "Patterns/DynamicProgramming/Coordinate/intro",
+            "Patterns/DynamicProgramming/Coordinate/Examples/index"
+          ]
         }
       ]
     },
