@@ -11,7 +11,7 @@ module.exports = {
         alt: "Patternize.io",
         src: "img/logo.svg"
       },
-      links: [
+      items: [
         {
           to: "docs/Patterns/Backtracking/README",
           label: "Patterns",
