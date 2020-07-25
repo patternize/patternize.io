@@ -12,6 +12,8 @@ The robot can only move either down or right at any point in time. The robot is 
 
 Now consider if some obstacles are added to the grids. How many unique paths would there be?
 
+![](./UnqiuePathsII.jpg)
+
 # Solution
 
 <Tabs
