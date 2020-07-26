@@ -3,7 +3,11 @@ title: Leetcode 62. Unique Paths
 tags: ['DynamicProgramming/Coordinate']
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Question
+![](./UnqiuePaths.jpg)
 
 Original Question: [Leetcode 62. Unique Paths](https://leetcode.com/problems/unique-paths/)
 
@@ -13,7 +17,6 @@ The robot can only move either down or right at any point in time. The robot is 
 
 How many possible unique paths are there?
 
-![](./UnqiuePaths.jpg)
 
 # Solution
 

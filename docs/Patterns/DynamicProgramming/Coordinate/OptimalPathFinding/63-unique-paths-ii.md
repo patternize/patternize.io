@@ -3,7 +3,12 @@ title: Leetcode 63. Unique Paths II
 tags: ['DynamicProgramming/Coordinate']
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Question
+![](./UnqiuePathsII.jpg)
+
 Original Question: [Leetcode 63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)
 
 A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
@@ -11,8 +16,6 @@ A robot is located at the top-left corner of a m x n grid (marked 'Start' in the
 The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
 
 Now consider if some obstacles are added to the grids. How many unique paths would there be?
-
-![](./UnqiuePathsII.jpg)
 
 # Solution
 
