@@ -11,7 +11,13 @@ module.exports = {
         alt: "Patternize.io",
         src: "img/logo.svg"
       },
-      links: [
+      items: [
+        {
+          to: "docs/Patterns/Backtracking/README",
+          label: "Patterns",
+          position: "left",
+          activeBasePath: 'docs/Patterns'
+        },
         {
           to: "docs/Algorithms/Sorting/BubbleSort",
           label: "Algorithms",
@@ -23,13 +29,6 @@ module.exports = {
           label: "Data Structures",
           position: "left",
           activeBasePath: 'docs/DataStructures'
-
-        },
-        {
-          to: "docs/Patterns/Backtracking/README",
-          label: "Patterns",
-          position: "left",
-          activeBasePath: 'docs/Patterns'
         },
         {
           to: "docs/Language/Java/README",
