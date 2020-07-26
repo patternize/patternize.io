@@ -1,6 +1,6 @@
 ---
 id: index
-title: Optimal Path Finding
+title: Optimal Path Finding Questions
 sidebar_label: Optimal Path Finding
 ---
 

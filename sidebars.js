@@ -111,6 +111,8 @@ module.exports = {
           label: "Coordinate Based",
           items: [
             "Patterns/DynamicProgramming/Coordinate/intro",
+            "Patterns/DynamicProgramming/Coordinate/Array/index",
+            "Patterns/DynamicProgramming/Coordinate/Matrix/index",
             "Patterns/DynamicProgramming/Coordinate/OptimalPathFinding/index"
           ]
         }
