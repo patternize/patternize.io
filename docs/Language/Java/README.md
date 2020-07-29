@@ -8,12 +8,10 @@ sidebar_label: Introduction
 In Java, most of the data structures fall in either `Collection` interface category or `Map` interface category.
 
 ### Collection
-![](/img/Language/Java/Viz-Collection.svg)
+![](./Viz-Collection.svg)
 
 ### Map
-![](/img/Language/Java/Viz-Map.svg)
-
-
+![](./Viz-Map.svg)
 
 ## References
  - [Collections In Java](https://www.javatpoint.com/collections-in-java)
