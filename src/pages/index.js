@@ -69,7 +69,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('/docs/Algorithms/Sorting/BubbleSort')}>
+              to={useBaseUrl('/docs/Patterns/Backtracking/Introduction')}>
               Get Started
             </Link>
           </div>

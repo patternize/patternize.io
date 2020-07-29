@@ -42,7 +42,7 @@ module.exports = {
       type: "category",
       label: "Java Data Structure",
       items: [
-        "Language/Java/README",
+        "Language/Java/Overview",
         {
           type: "category",
           label: "List",
@@ -93,7 +93,7 @@ module.exports = {
       type: "category",
       label: "Backtracking",
       items: [
-        "Patterns/Backtracking/README",
+        "Patterns/Backtracking/Introduction",
         {
           type: "category",
           label: "Permutation",
@@ -121,7 +121,7 @@ module.exports = {
     {
       type: "category",
       label: "Bit Manipulation",
-      items: ["Patterns/BitManipulation/README"]
+      items: ["Patterns/BitManipulation/Introduction"]
     },
     {
       type: "category",

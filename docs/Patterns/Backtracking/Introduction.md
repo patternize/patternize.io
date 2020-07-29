@@ -1,5 +1,5 @@
 ---
-id: README
+id: Introduction
 title: Introduction to Backtracking
 sidebar_label: Introduction to Backtracking
 ---
