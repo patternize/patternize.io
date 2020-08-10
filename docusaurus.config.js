@@ -13,7 +13,7 @@ module.exports = {
       },
       items: [
         {
-          to: "docs/Patterns/Backtracking/README",
+          to: "docs/Patterns/Backtracking/Introduction",
           label: "Patterns",
           position: "left",
           activeBasePath: "docs/Patterns",
@@ -31,7 +31,7 @@ module.exports = {
           activeBasePath: "docs/DataStructures",
         },
         {
-          to: "docs/Language/Java/README",
+          to: "docs/Language/Java/Overview",
           label: "Language",
           position: "left",
           activeBasePath: "docs/Language",
