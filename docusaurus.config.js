@@ -16,25 +16,25 @@ module.exports = {
           to: "docs/Patterns/Backtracking/Introduction",
           label: "Patterns",
           position: "left",
-          activeBasePath: 'docs/Patterns'
+          activeBasePath: "docs/Patterns"
         },
         {
           to: "docs/Algorithms/Sorting/BubbleSort",
           label: "Algorithms",
           position: "left",
-          activeBasePath: 'docs/Algorithms'
+          activeBasePath: "docs/Algorithms"
         },
         {
           to: "docs/DataStructures/Advanced/VList",
           label: "Data Structures",
           position: "left",
-          activeBasePath: 'docs/DataStructures'
+          activeBasePath: "docs/DataStructures"
         },
         {
           to: "docs/Language/Java/Overview",
           label: "Language",
           position: "left",
-          activeBasePath: 'docs/Language'
+          activeBasePath: "docs/Language"
         },
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
@@ -84,6 +84,10 @@ module.exports = {
         }
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Carl Liu (gazcn007)`
+    },
+    algolia: {
+      apiKey: "b3b4a1801c88dedb7dc0785d10a51de3",
+      indexName: "patternize_io"
     }
   },
   presets: [
