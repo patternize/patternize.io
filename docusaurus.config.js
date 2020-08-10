@@ -9,40 +9,40 @@ module.exports = {
       title: "Patternize.io",
       logo: {
         alt: "Patternize.io",
-        src: "img/logo.svg"
+        src: "img/logo.svg",
       },
       items: [
         {
           to: "docs/Patterns/Backtracking/README",
           label: "Patterns",
           position: "left",
-          activeBasePath: 'docs/Patterns'
+          activeBasePath: "docs/Patterns",
         },
         {
           to: "docs/Algorithms/Sorting/BubbleSort",
           label: "Algorithms",
           position: "left",
-          activeBasePath: 'docs/Algorithms'
+          activeBasePath: "docs/Algorithms",
         },
         {
           to: "docs/DataStructures/Advanced/VList",
           label: "Data Structures",
           position: "left",
-          activeBasePath: 'docs/DataStructures'
+          activeBasePath: "docs/DataStructures",
         },
         {
           to: "docs/Language/Java/README",
           label: "Language",
           position: "left",
-          activeBasePath: 'docs/Language'
+          activeBasePath: "docs/Language",
         },
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: "https://github.com/patternize/patternize.io",
           label: "GitHub",
-          position: "right"
-        }
-      ]
+          position: "right",
+        },
+      ],
     },
     footer: {
       style: "dark",
@@ -52,58 +52,62 @@ module.exports = {
           items: [
             {
               label: "Docusaurus",
-              href: "https://docusaurus.io"
+              href: "https://docusaurus.io",
             },
             {
               label: "PyTutor",
-              href: "http://pythontutor.com"
-            }
-          ]
+              href: "http://pythontutor.com",
+            },
+          ],
         },
         {
           title: "Resources",
           items: [
             {
               label: "Princeton Algorithms 4th Edition",
-              to: "https://algs4.cs.princeton.edu/home"
-            }
-          ]
+              to: "https://algs4.cs.princeton.edu/home",
+            },
+          ],
         },
         {
           title: "Follow Author",
           items: [
             {
               label: "Carl Liu",
-              href: "http://www.carlrocks.com"
+              href: "http://www.carlrocks.com",
             },
             {
               label: "GitHub",
-              href: "https://github.com/gazcn007"
-            }
-          ]
-        }
+              href: "https://github.com/gazcn007",
+            },
+          ],
+        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Carl Liu (gazcn007)`
-    }
+      copyright: `Copyright © ${new Date().getFullYear()} Carl Liu (gazcn007)`,
+    },
+    algolia: {
+      apiKey: "b3b4a1801c88dedb7dc0785d10a51de3",
+      indexName: "patternize_io",
+    },
   },
   presets: [
     [
       "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve("./sidebars.js")
+          sidebarPath: require.resolve("./sidebars.js"),
           // editUrl:
           //   'https://github.com/facebook/docusaurus/edit/master/website/',
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css")
-        }
-      }
-    ]
+          customCss: require.resolve("./src/css/custom.css"),
+        },
+      },
+    ],
   ],
   // for deployments
   url: "https://patternize.github.io",
   baseUrl: "/",
   projectName: "patternize.github.io",
-  organizationName: "patternize"
+  organizationName: "patternize",
 };
