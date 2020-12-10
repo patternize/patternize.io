@@ -9,8 +9,8 @@ The binary tree is a subset of the *m*-ary tree, which can have any number of ch
 ```javascript
 function TreeNode(value, left, right) {
     this.value = value === undefined ? 0 : value;
-    this.left = left === undefined ? null : value;
-    this.right = right === undefined ? null : value;
+    this.left = left === undefined ? null : left;
+    this.right = right === undefined ? null : right;
 }
 ```
 
