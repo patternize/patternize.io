@@ -37,7 +37,9 @@ To conduct a lookup operation in a binary search tree using the binary search me
 // }
 
 const lookup = (node, target) => {
-    if (node === null) return null; //return null when we have exhausted the binary search tree and have not found a node with the target value.
+    /* return null when we have exhausted the binary search tree 
+    and have not found a node with the target value */
+    if (node === null) return null; 
     if (node.value === target) {
         return node;
     } else if (node.value < target) {
@@ -102,10 +104,10 @@ Our logic in the fourth situation results from an implication from the binary se
 const deleteNode = (node, target) => {
     if (node === null) return null;
     if (node.val === target) {
-        //takes care of situation 2 & 3
+        //situation 2 & 3
         if (node.left === null) return node.right;
         if (node.right === null) return node.left;
-        //takes care of situation 1 & 4
+        //situation 1 & 4
         //if target node has no child, the helper function will return null
         let min = getMin(node.right);
         node.val = min.val;
