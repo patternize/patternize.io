@@ -27,7 +27,11 @@ module.exports = {
         {
           type: "category",
           label: "Binary Tree",
-          items: ["QuestionBank/Leetcode/LC103"]
+          items: [
+            "DataStructures/Basic/BinaryTree/Definitions&&Properties",
+            "DataStructures/Basic/BinaryTree/BSTOperations",
+            "QuestionBank/Leetcode/LC103"
+          ]
         }
       ]
     },

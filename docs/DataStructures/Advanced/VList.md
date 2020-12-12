@@ -5,7 +5,7 @@ sidebar_label: VList
 ---
 
 # VList
-Implement an array that has flexible length. In other words, implement ArrayList in Java without using ArrayList.
+Implement an array that has flexible length. In other words, implement ArrayList in Java without using ArrayList. 
 
 - Implement 2 methods:
     - void append(T element) -> should be O(1)
