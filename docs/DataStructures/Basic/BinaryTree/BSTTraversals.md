@@ -34,7 +34,7 @@ const bfs_iterative = (root) => {
 };
 
 // breadth-first search can also be done recursively, 
-// though it more commonly done iteratively
+// though it is more commonly done iteratively
 const bfs_recursive = (root) => {
     let queue = [root]; 
     let result = [];
