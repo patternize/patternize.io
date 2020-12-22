@@ -30,6 +30,7 @@ module.exports = {
           items: [
             "DataStructures/Basic/BinaryTree/Definitions&&Properties",
             "DataStructures/Basic/BinaryTree/BSTOperations",
+            "DataStructures/Basic/BinaryTree/BSTTraversals",
             "QuestionBank/Leetcode/LC103"
           ]
         }
