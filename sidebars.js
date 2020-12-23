@@ -31,7 +31,13 @@ module.exports = {
             "DataStructures/Basic/BinaryTree/Definitions&&Properties",
             "DataStructures/Basic/BinaryTree/BSTOperations",
             "DataStructures/Basic/BinaryTree/BSTTraversals",
-            "QuestionBank/Leetcode/LC103"
+            {
+              type: "category",
+              label: "Common Problems",
+              items: [
+                "QuestionBank/Leetcode/LC103",
+              ]
+            }
           ]
         }
       ]
