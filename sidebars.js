@@ -22,7 +22,7 @@ module.exports = {
   "Data Structure": [
     {
       type: "category",
-      label: "Basic",
+      label: "Basics",
       items: [
         {
           type: "category",
@@ -35,7 +35,8 @@ module.exports = {
               type: "category",
               label: "Common Problems",
               items: [
-                "QuestionBank/Leetcode/LC103",
+                "QuestionBank/Leetcode/LC98",
+                "QuestionBank/Leetcode/LC103"
               ]
             }
           ]
