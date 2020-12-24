@@ -36,7 +36,8 @@ module.exports = {
               label: "Common Problems",
               items: [
                 "QuestionBank/Leetcode/LC98",
-                "QuestionBank/Leetcode/LC103"
+                "QuestionBank/Leetcode/LC103",
+                "QuestionBank/Leetcode/LC199"
               ]
             }
           ]
