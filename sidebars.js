@@ -40,8 +40,7 @@ module.exports = {
                 "QuestionBank/Leetcode/LC103",
                 "QuestionBank/Leetcode/LC108",
                 "QuestionBank/Leetcode/LC199",
-                "QuestionBank/Leetcode/LC236",
-                "QuestionBank/Leetcode/LC450"
+                "QuestionBank/Leetcode/LC236"
               ]
             }
           ]
