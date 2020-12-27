@@ -25,7 +25,7 @@ module.exports = {
           activeBasePath: "docs/Algorithms"
         },
         {
-          to: "docs/DataStructures/Advanced/VList",
+          to: "docs/DataStructures/Basic/BinaryTree/Definitions&&Properties",
           label: "Data Structures",
           position: "left",
           activeBasePath: "docs/DataStructures"
