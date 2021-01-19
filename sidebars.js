@@ -115,7 +115,8 @@ module.exports = {
           label: "Permutation",
           items: ["Patterns/Backtracking/Permutation/Permutation"]
         },
-        "Patterns/Backtracking/ExpressionPuzzle"
+        "Patterns/Backtracking/ExpressionPuzzle",
+        "Patterns/Backtracking/ConfusingNumber"
       ]
     },
     {
