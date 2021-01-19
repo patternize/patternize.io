@@ -4,7 +4,7 @@ title: Bubble Sort
 sidebar_label: Bubble Sort
 ---
 
-import { Array, BarChart, Button } from '@patternize/components';
+import { Array, VerticalBarChart, Button } from '@patternize/components';
 
 ## Idea 
 - compare each item wth the item next to it, and swap positions if required
@@ -18,7 +18,7 @@ export const BubbleSort = ({ data }) => {
     return (
         <div className={'controller'}>
             <Array data={data[index]} />
-            <BarChart data={data[index]} />
+            <VerticalBarChart data={data[index]} />
             <br/>
             <Button onClick={() => setIndex(index-1)} disabled={index == 0}>
                 Previous

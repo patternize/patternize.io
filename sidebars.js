@@ -22,12 +22,28 @@ module.exports = {
   "Data Structure": [
     {
       type: "category",
-      label: "Basic",
+      label: "Basics",
       items: [
         {
           type: "category",
           label: "Binary Tree",
-          items: ["QuestionBank/Leetcode/LC103"]
+          items: [
+            "DataStructures/Basic/BinaryTree/Definitions&&Properties",
+            "DataStructures/Basic/BinaryTree/BSTOperations",
+            "DataStructures/Basic/BinaryTree/BSTTraversals",
+            {
+              type: "category",
+              label: "Common Problems",
+              items: [
+                "QuestionBank/Leetcode/LC98",
+                "QuestionBank/Leetcode/LC101",
+                "QuestionBank/Leetcode/LC103",
+                "QuestionBank/Leetcode/LC108",
+                "QuestionBank/Leetcode/LC199",
+                "QuestionBank/Leetcode/LC236"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -42,7 +58,7 @@ module.exports = {
       type: "category",
       label: "Java Data Structure",
       items: [
-        "Language/Java/README",
+        "Language/Java/Overview",
         {
           type: "category",
           label: "List",
@@ -93,7 +109,7 @@ module.exports = {
       type: "category",
       label: "Backtracking",
       items: [
-        "Patterns/Backtracking/README",
+        "Patterns/Backtracking/Introduction",
         {
           type: "category",
           label: "Permutation",
@@ -104,8 +120,24 @@ module.exports = {
     },
     {
       type: "category",
+      label: "Dynamic Programming",
+      items: [
+        {
+          type: "category",
+          label: "Coordinate Based",
+          items: [
+            "Patterns/DynamicProgramming/Coordinate/intro",
+            "Patterns/DynamicProgramming/Coordinate/Array/index",
+            "Patterns/DynamicProgramming/Coordinate/Matrix/index",
+            "Patterns/DynamicProgramming/Coordinate/OptimalPathFinding/index"
+          ]
+        }
+      ]
+    },
+    {
+      type: "category",
       label: "Bit Manipulation",
-      items: ["Patterns/BitManipulation/README"]
+      items: ["Patterns/BitManipulation/Introduction"]
     },
     {
       type: "category",

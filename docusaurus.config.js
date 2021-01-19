@@ -1,11 +1,9 @@
 module.exports = {
   title: "Patternize.io",
   tagline: "Patternize Algorithms and Data Structure",
-  url: "http://patternize.github.io",
   baseUrl: "/",
   favicon: "img/favicon.ico",
   organizationName: "Patternize", // Usually your GitHub org/user name.
-  projectName: "Patternize.io", // Usually your repo name.
   themeConfig: {
     navbar: {
       title: "Patternize.io",
@@ -13,26 +11,30 @@ module.exports = {
         alt: "Patternize.io",
         src: "img/logo.svg"
       },
-      links: [
+      items: [
+        {
+          to: "docs/Patterns/Backtracking/Introduction",
+          label: "Patterns",
+          position: "left",
+          activeBasePath: "docs/Patterns"
+        },
         {
           to: "docs/Algorithms/Sorting/BubbleSort",
           label: "Algorithms",
-          position: "left"
+          position: "left",
+          activeBasePath: "docs/Algorithms"
         },
         {
-          to: "docs/DataStructures/Advanced/VList",
+          to: "docs/DataStructures/Basic/BinaryTree/Definitions&&Properties",
           label: "Data Structures",
-          position: "left"
+          position: "left",
+          activeBasePath: "docs/DataStructures"
         },
         {
-          to: "docs/Patterns/Backtracking/README",
-          label: "Patterns",
-          position: "left"
-        },
-        {
-          to: "docs/Language/Java/README",
+          to: "docs/Language/Java/Overview",
           label: "Language",
-          position: "left"
+          position: "left",
+          activeBasePath: "docs/Language"
         },
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
@@ -82,6 +84,10 @@ module.exports = {
         }
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Carl Liu (gazcn007)`
+    },
+    algolia: {
+      apiKey: "b3b4a1801c88dedb7dc0785d10a51de3",
+      indexName: "patternize_io"
     }
   },
   presets: [

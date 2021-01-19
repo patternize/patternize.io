@@ -4,7 +4,7 @@ title: Selection Sort
 sidebar_label: Selection Sort
 ---
 
-import { Array, BarChart, Button } from '@patternize/components';
+import { Array, VerticalBarChart, Button } from '@patternize/components';
 
 ## Idea
 The idea is to select the smallest element of remaining array and then swap it to the front.
@@ -15,7 +15,7 @@ export const SelectionSort = ({ data }) => {
     const [index, setIndex] = React.useState(0);
     return (
         <div className={'controller'}>
-            <BarChart data={data[index]} />
+            <VerticalBarChart data={data[index]} />
             <br/>
             <Button onClick={() => setIndex(index-1)} disabled={index == 0}>
                 Previous
