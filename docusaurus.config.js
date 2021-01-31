@@ -70,7 +70,7 @@ module.exports = {
           ]
         },
         {
-          title: "Follow Author",
+          title: "Follow Us",
           items: [
             {
               label: "GitHub",
