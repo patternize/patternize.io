@@ -70,20 +70,16 @@ module.exports = {
           ]
         },
         {
-          title: "Follow Author",
+          title: "Follow Us",
           items: [
             {
-              label: "Carl Liu",
-              href: "http://www.carlrocks.com"
-            },
-            {
               label: "GitHub",
-              href: "https://github.com/gazcn007"
+              href: "https://github.com/patternize"
             }
           ]
         }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Carl Liu (gazcn007)`
+      copyright: `Copyright © ${new Date().getFullYear()} Patternize.io`
     },
     algolia: {
       apiKey: "b3b4a1801c88dedb7dc0785d10a51de3",
