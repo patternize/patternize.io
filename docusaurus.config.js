@@ -38,9 +38,8 @@ module.exports = {
         },
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: "https://github.com/patternize/patternize.io",
-          label: "GitHub",
-          position: "right"
+          type: 'custom-github-button',
+          position: "right",
         }
       ]
     },
@@ -85,7 +84,10 @@ module.exports = {
       appId: 'BL2GDNRTKH',
       apiKey: "b3b4a1801c88dedb7dc0785d10a51de3",
       indexName: "patternize_io"
-    }
+    },
+    socials: {
+      github: 'https://github.com/patternize/patternize.io',
+    },
   },
   presets: [
     [
@@ -105,6 +107,14 @@ module.exports = {
   // for deployments
   url: "https://patternize.github.io",
   baseUrl: "/",
-  projectName: "patternize.github.io",
-  organizationName: "patternize"
+  trailingSlash: false,
+  projectName: "patternize.io",
+  organizationName: "patternize",
+  scripts: [
+    {
+      src: 'https://buttons.github.io/buttons.js',
+      async: true,
+      defer: true
+    }
+  ]
 };

@@ -6,7 +6,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "GIT_USER=gazcn007 USE_SSH=true docusaurus deploy",
+    "deploy": "GIT_USER=gazcn007 USE_SSH=true DEPLOYMENT_BRANCH=master docusaurus deploy",
     "build:components": "./build-components.sh"
   },
   "dependencies": {
@@ -15,7 +15,8 @@
     "@patternize/components": "^0.1.6",
     "classnames": "^2.2.6",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-github-btn": "^1.4.0"
   },
   "browserslist": {
     "production": [
