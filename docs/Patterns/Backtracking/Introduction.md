@@ -6,7 +6,6 @@ sidebar_label: Introduction to Backtracking
 
 import { TreeChart } from '@patternize/components'
 
-
 Have you ever run into these problems in your daily life?
 - For my luggage lock, what are some of the interesting password combination I can come up with? 🔐
 - For my living room, how many possible ways I can rearrange my sofa, table, speakers and TV? 📺

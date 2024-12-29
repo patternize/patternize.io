@@ -2395,10 +2395,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@patternize/components@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@patternize/components/-/components-0.1.3.tgz#f822b1003713d4997d411d1dac8460746a7e4131"
-  integrity sha512-ewgIpjAlYPZdco0AWhRGfsg8+BgbB0MUt+eYbUDO22EL6f+L/j6IY/H+qPCz9wKu0qteJelpsJ3B8gF7+1Aa5Q==
+"@patternize/components@^0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@patternize/components/-/components-0.1.6.tgz#954af0a3e4135fbbb3251097684c250f1e97ce74"
+  integrity sha512-dRL1ut0J+aENdAjkG6pGj4JBL1K0muUspNfFaSRMKrNPnG71mcvwPh7YqGkHofKgvafFAGEeppliQsnsI15dqw==
   dependencies:
     "@storybook/react-webpack5" "^8.3.6"
     "@testing-library/react" "^16.0.1"
