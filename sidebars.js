@@ -15,8 +15,12 @@ module.exports = {
         "Algorithms/Sorting/OddEvenSort",
         "Algorithms/Sorting/SelectionSort",
         "Algorithms/Sorting/InsertionSort",
-        "Algorithms/Sorting/MergeSort"
+        "Algorithms/Sorting/MergeSort",
       ]
+    },{
+      type: "category",
+      label: "Traversal",
+      items: ["Algorithms/ReactFiber/index"]
     }
   ],
   "Data Structure": [

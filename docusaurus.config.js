@@ -82,6 +82,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Patternize.io`
     },
     algolia: {
+      appId: 'BL2GDNRTKH',
       apiKey: "b3b4a1801c88dedb7dc0785d10a51de3",
       indexName: "patternize_io"
     }

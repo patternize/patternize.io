@@ -5,15 +5,20 @@ sidebar_label: Introduction
 ---
 
 ## Power of 2
-    1 << x === 2^x
 
+```javascript
+(1 << x === 2) ^ x;
+```
 
 ## Log Base of 2
-    # log(a) base b = log(a)/log(b)
-    32 >> 5 === log(32)/log(2) 
 
+```javascript
+# log(a) base b = log(a)/log(b)
+32 >> 5 === log(32)/log(2)
+```
 
 ## Count Ones In Binary Representation
+
 - `n&(n-1)` rule: is used when you want to quickly count how many `1s` in your binary number, every-time you do `n&(n-1)`, a `1` in your binary form will be removed:
 
 ```java
@@ -45,8 +50,6 @@ int count_one(int n) {
 }
 ```
 
-
-
 ## References:
-- https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently
 
+- https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently
