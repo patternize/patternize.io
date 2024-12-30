@@ -108,7 +108,7 @@ module.exports = {
   url: "https://patternize.github.io",
   baseUrl: "/",
   trailingSlash: false,
-  projectName: "patternize.io",
+  projectName: "patternize.github.io",
   organizationName: "patternize",
   scripts: [
     {

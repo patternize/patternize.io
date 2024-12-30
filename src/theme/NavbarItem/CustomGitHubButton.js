@@ -4,7 +4,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export default function CustomGitHubButton() {
   const {siteConfig} = useDocusaurusContext();
-  const {organizationName, projectName} = siteConfig;
+  const {organizationName} = siteConfig;
+  const projectName = 'patternize.io';
 
   return (
     <div className="github-button-wrapper" style={{ 
