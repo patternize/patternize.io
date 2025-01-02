@@ -2395,10 +2395,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@patternize/components@^0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@patternize/components/-/components-0.2.3.tgz#3ccdb0dc49da8324c0c0fe9102a87c1f21796a73"
-  integrity sha512-zVIz114roGzo7wnxxtxGE840gSlEMRE1DhyKkuubWF4Q1NHSNPBZ0/UtaxjAOu9xx2gLXOv+hnaRUtf4HM5VVQ==
+"@patternize/components@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@patternize/components/-/components-0.2.4.tgz#f2852d0cd77f464db10a028813fdf21c202d3abf"
+  integrity sha512-UEZWmHKDru8bt86haL/uGN/SsVvJIR9tJw6Z+NLUXToSHaoHK1QVNA3ELrrBdE62K7d3/bazvugbyni2taN3Gw==
   dependencies:
     "@react-spring/web" "^9.7.5"
     "@storybook/react-webpack5" "^8.3.6"
@@ -2409,7 +2409,7 @@
     "@visx/gradient" "^3.3.0"
     "@visx/group" "^3.3.0"
     "@visx/hierarchy" "^3.3.0"
-    "@visx/responsive" "^3.10.2"
+    "@visx/responsive" "^3.3.0"
     "@visx/shape" "^3.5.0"
     d3 "^7.9.0"
     d3-geo "^3.1.1"
@@ -3642,7 +3642,7 @@
     d3-hierarchy "^1.1.4"
     prop-types "^15.6.1"
 
-"@visx/responsive@^3.10.2":
+"@visx/responsive@^3.3.0":
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/@visx/responsive/-/responsive-3.12.0.tgz#5622e2dcf951642ff8ca49b81c8a477281fe6066"
   integrity sha512-GV1BTYwAGlk/K5c9vH8lS2syPnTuIqEacI7L6LRPbsuaLscXMNi+i9fZyzo0BWvAdtRV8v6Urzglo++lvAXT1Q==

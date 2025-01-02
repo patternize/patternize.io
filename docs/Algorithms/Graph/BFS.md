@@ -12,6 +12,8 @@ import { GraphBFS } from '@patternize/components';
 Try out BFS on this interactive graph:
 
 <GraphBFS />
+<br/>
+
 
 # Breadth First Search (BFS)
 

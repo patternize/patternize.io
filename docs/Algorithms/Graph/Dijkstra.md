@@ -18,6 +18,8 @@ Dijkstra's algorithm finds the shortest path between nodes in a weighted graph, 
 Try Dijkstra's algorithm on this interactive graph:
 
 <GraphDijkstra />
+<br/>
+
 
 ## How Dijkstra's Algorithm Works
 

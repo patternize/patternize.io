@@ -12,6 +12,7 @@ import { GraphDFS } from '@patternize/components';
 Experiment with DFS using this interactive visualization:
 
 <GraphDFS />
+<br/>
 
 # Depth First Search (DFS)
 
