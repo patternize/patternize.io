@@ -1,6 +1,6 @@
 {
   "name": "patternize.io",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "docusaurus start",
@@ -12,7 +12,7 @@
   "dependencies": {
     "@docusaurus/core": "^2.4.3",
     "@docusaurus/preset-classic": "^2.4.3",
-    "@patternize/components": "^0.1.6",
+    "@patternize/components": "^0.2.3",
     "classnames": "^2.2.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

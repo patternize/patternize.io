@@ -11,7 +11,6 @@ export default function CustomGitHubButton() {
         data-show-count="true"
         aria-label="Star patternize/patternize.io on GitHub"
       >
-        Star
       </GitHubButton>
     </div>
   );

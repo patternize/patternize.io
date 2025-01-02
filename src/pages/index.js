@@ -21,7 +21,7 @@ const features = [
     imageUrl: 'img/association.svg',
     description: (
       <>
-        Patternize.io has will create associations between topics, which creates a path for you to walk through a variety of topics.
+        Patternize.io creates associations between topics, providing a clear path to explore different computer science concepts.
       </>
     ),
   },
@@ -30,7 +30,7 @@ const features = [
     imageUrl: 'img/brain.svg',
     description: (
       <>
-        The goal of this project is to help you see and understand complicated Computer Science easily.
+          Our mission is to make complex Computer Science concepts clear and approachable through visual learning.
       </>
     ),
   },
@@ -68,7 +68,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('/docs/Patterns/Backtracking/Introduction')}>
+              to={useBaseUrl('/docs/Algorithms/Sorting/BubbleSort')}>
               Get Started
             </Link>
           </div>

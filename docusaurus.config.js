@@ -13,12 +13,6 @@ module.exports = {
       },
       items: [
         {
-          to: "docs/Patterns/Backtracking/Introduction",
-          label: "Patterns",
-          position: "left",
-          activeBasePath: "docs/Patterns"
-        },
-        {
           to: "docs/Algorithms/Sorting/BubbleSort",
           label: "Algorithms",
           position: "left",
@@ -29,6 +23,12 @@ module.exports = {
           label: "Data Structures",
           position: "left",
           activeBasePath: "docs/DataStructures"
+        },
+        {
+          to: "docs/Patterns/DynamicProgramming/Coordinate/intro",
+          label: "Patterns",
+          position: "left",
+          activeBasePath: "docs/Patterns"
         },
         {
           to: "docs/Language/Java/Overview",
@@ -54,8 +54,8 @@ module.exports = {
               href: "https://docusaurus.io"
             },
             {
-              label: "PyTutor",
-              href: "http://pythontutor.com"
+              label: "airbnb/visx",
+              href: "https://airbnb.io/visx"
             }
           ]
         },
@@ -72,7 +72,7 @@ module.exports = {
           title: "Follow Us",
           items: [
             {
-              label: "GitHub",
+              label: "Patternize.io",
               href: "https://github.com/patternize"
             }
           ]

@@ -8,7 +8,7 @@ authors: [gazcn007]
 tags: [react, javascript, web development]
 ---
 
-import { ReactFiber, SlideShow } from '@patternize/components';
+import { ReactFiber, MorrisTraversal, ConcurrentTraversal, DFSTraversal } from '@patternize/components';
 
 :::info
 This blog will explain React Fiber Internal Algorithms, we will:
@@ -61,24 +61,9 @@ Well, there are two problems with traversing the tree using recursion, we all kn
 1. For any tree recursion, the call stack is O(n)
 2. It is impossible to pause the traversal and stop the stack from growing while you are doing recursion.
 
-**Here is an interactive slide show of the call stack of the recursion stack:**
+**Here is an interactive demoof the call stack of the recursion stack:**
 
-(You can navigate back and forth using Previous and Next button)
-
-export const StackSlideShow = () => {
-const images = [
-'/slideshow/React-Stack/React-Fiber.001.jpeg',
-'/slideshow/React-Stack/React-Fiber.002.jpeg',
-'/slideshow/React-Stack/React-Fiber.003.jpeg',
-'/slideshow/React-Stack/React-Fiber.004.jpeg',
-'/slideshow/React-Stack/React-Fiber.005.jpeg',
-'/slideshow/React-Stack/React-Fiber.006.jpeg',
-'/slideshow/React-Stack/React-Fiber.007.jpeg'
-];
-return <SlideShow maxWidth='1000px' maxHeight='460px' images={images}/>;
-}
-
-<StackSlideShow />
+<DFSTraversal />
 
 ## Solution to the problems - Morris Traversal
 
@@ -86,24 +71,8 @@ Morris Traversal is a way to traverse a tree without using recursion. It is a li
 
 **Here is an interactive slide show of traversing the tree with Morris Traversal:**
 
-export const FiberSlideShow = () => {
-const images = [
-'/slideshow/React-Fiber/React-Fiber.001.jpeg',
-'/slideshow/React-Fiber/React-Fiber.002.jpeg',
-'/slideshow/React-Fiber/React-Fiber.003.jpeg',
-'/slideshow/React-Fiber/React-Fiber.004.jpeg',
-'/slideshow/React-Fiber/React-Fiber.005.jpeg',
-'/slideshow/React-Fiber/React-Fiber.006.jpeg',
-'/slideshow/React-Fiber/React-Fiber.007.jpeg',
-'/slideshow/React-Fiber/React-Fiber.008.jpeg',
-'/slideshow/React-Fiber/React-Fiber.009.jpeg',
-'/slideshow/React-Fiber/React-Fiber.010.jpeg',
-'/slideshow/React-Fiber/React-Fiber.011.jpeg'
-];
-return <SlideShow maxWidth='1000px' maxHeight='460px' images={images}/>;
-}
-
-<FiberSlideShow />
+<MorrisTraversal />
+<br/>
 
 **With Morris Traversal, the call stack is constant O(1) space. Runtime is O(1) for each evaluation. And you can pause the traversal anytime!**
 
@@ -117,17 +86,4 @@ What you can do with fiber once you have O(1) time and space for each evaluation
 
 This is how React Fiber achieves concurrent rendering, you can see the animation below:
 
-export const ConcurrencySlideShow = () => {
-const images = [
-'/slideshow/React-Fiber-Concurrency/React-Fiber-Concurrency.001.jpeg',
-'/slideshow/React-Fiber-Concurrency/React-Fiber-Concurrency.002.jpeg',
-'/slideshow/React-Fiber-Concurrency/React-Fiber-Concurrency.003.jpeg',
-'/slideshow/React-Fiber-Concurrency/React-Fiber-Concurrency.004.jpeg',
-'/slideshow/React-Fiber-Concurrency/React-Fiber-Concurrency.005.jpeg',
-'/slideshow/React-Fiber-Concurrency/React-Fiber-Concurrency.006.jpeg',
-'/slideshow/React-Fiber-Concurrency/React-Fiber-Concurrency.007.jpeg'
-];
-return <SlideShow maxWidth='1000px' maxHeight='460px' images={images}/>;
-}
-
-<ConcurrencySlideShow />
+<ConcurrentTraversal />

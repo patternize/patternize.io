@@ -10,6 +10,9 @@ There are two ways to conduct a lookup operation in a binary search tree. The fi
 #### Brute Force 
 To conduct a lookup operation in a binary search tree using the brute force method, we must traverse both sides of the tree, and return the subtree with the root node that contains the matching value. In the worst case, we will have to traverse the entire tree before we find the node which contains the value we are looking for, making the time complexity of this method O(n).
 
+<details>
+<summary>Brute Force Code Implementation</summary>
+
 ```javascript
 // definition for a binary tree node
 // function TreeNode(value, left, right) {
@@ -25,8 +28,13 @@ const lookup = (node, target) => {
 }
 ```
 
+</details>
+
 #### Binary Search
 To conduct a lookup operation in a binary search tree using the binary search method, we will only have to traverse one side of the current node for every iteration. The availability of this leverage results from the fact that a binary search tree is already sorted. The value of the left child in a binary search tree will always be smaller than the value of the parent, while the value of the right child will always be greater than the value of the parent. Therefore, if the value we are looking for is greater than the value of the current node, then we can know for a fact that the node we are looking for cannot be on the left side of the current node. In this way, we only have to check half of the current subtree each time. This makes the time complexity of the binary search method O(logn). 
+
+<details>
+<summary>Binary Search Code Implementation</summary>
 
 ```javascript
 // definition for a binary tree node
@@ -50,6 +58,8 @@ const lookup = (node, target) => {
 }
 ```
 
+</details>
+
 ### Insertion
 To insert a value into a binary search tree, we must follow the BST invariant. Namely, that *the value of the left child must always be smaller than the value of the parent, and the value of the right child must always be greater than the value of the parent*. Hence, we must always compare the value we want to insert against the value of the current node. 
 
@@ -59,6 +69,9 @@ Therefore, at any point during a BST insertion operation, we can expect one of t
 1. The value of current node is null, at which point we have exhausted the tree. In this situation, we can simply assign the value we want to insert onto the current node.
 2. The value of the current node is lesser than the value we want to insert, at which point we move on to the right child of the current node.
 3. The value of the current node is greater than the value we want to insert, at which point we move on to the left child of the current node. 
+
+<details>
+<summary>Insertion Code Implementation</summary>
 
 ```javascript
 // definition for a binary tree node
@@ -80,6 +93,8 @@ const insertNode = (node, target) => {
 }
 ```
 
+</details>
+
 ### Deletion
 To delete a node in a binary search tree, we also need to make sure to preserve the binary search tree invariant. Therefore, the delete operation involves an additional layer of complexity of rearranging the remaining nodes. We must rearrange the remaining nodes in such a way that the value of every left child will always be smaller than the value of the parent, while the value of every right child will always be greater than the value of the parent.
 
@@ -92,6 +107,9 @@ In the delete operation, we can expect one of four situations after a binary sea
 4. The target node has both children, in which case we can replace it with either the greatest node on its left side, or the smallest node on its right side. 
 
 Our logic in the fourth situation results from an implication from the binary search tree invariant. That is, the greatest node on the left side of a tree will always be smaller than any node on the right side, while the smallest node on the right side will always be greater than any node on the left side. 
+
+<details>
+<summary>Deletion Code Implementation</summary>
 
 ```javascript
 // definition for a binary tree node
@@ -129,3 +147,5 @@ const getMin = (node) => {
     return node;
 }
 ```
+
+</details>

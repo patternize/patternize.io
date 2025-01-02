@@ -4,52 +4,42 @@ title: Bit Manipulation
 sidebar_label: Introduction
 ---
 
-## Power of 2
+# Common Bit Manipulation Operations
 
-```javascript
-(1 << x === 2) ^ x;
-```
+## Basic Operations
 
-## Log Base of 2
+| Operation | Symbol | Description | Example |
+|-----------|---------|------------|---------|
+| AND | & | Returns 1 only if both bits are 1 | `5 & 3 = 1` (0101 & 0011 = 0001) |
+| OR | \| | Returns 1 if either bit is 1 | `5 | 3 = 7` (0101 \| 0011 = 0111) |
+| XOR | ^ | Returns 1 if bits are different | `5 ^ 3 = 6` (0101 ^ 0011 = 0110) |
+| NOT | ~ | Inverts all bits | `~5 = -6` (Inverts 0101 to 1010) |
+| Left Shift | << | Shifts bits left by b positions | `5 << 1 = 10` (0101 -> 1010) |
+| Right Shift | >> | Shifts bits right by b positions | `5 >> 1 = 2` (0101 -> 0010) |
 
-```javascript
-# log(a) base b = log(a)/log(b)
-32 >> 5 === log(32)/log(2)
-```
+## Common Bit Manipulation Tricks
 
-## Count Ones In Binary Representation
+### Check if Power of 2
+- `n & (n-1) == 0` checks if n is a power of 2
+- Works because powers of 2 have exactly one 1 bit
+- Example: `8 & 7 = 0` (1000 & 0111 = 0000)
 
-- `n&(n-1)` rule: is used when you want to quickly count how many `1s` in your binary number, every-time you do `n&(n-1)`, a `1` in your binary form will be removed:
+### Get Last Set Bit
+- `n & -n` isolates the rightmost 1 bit
+- Example: `12 & -12 = 4` (1100 & 0100 = 0100)
 
-```java
-// first run
-n = 23 // (10111)
-nMinusOne = n - 1 // === 22 (10110)
-n = n & nMinusOne // === 22 (10111 & 10110 = 10110)
-// second run
-nMinusOne = 22 - 1 // == 21 (10101)
-n = n & nMinusOne // == 20 (10110 & 10101 = 10101)
-// third run
-nMinusOne = 20 - 1 // == 19 (10011)
-n = n & nMinusOne // == 16 (10101 & 10011 = 10000)
-// fourth run
-nMinusOne = 16 - 1 // == 15 (01111)
-n = n & nMinusOne // == 0 (10000 & 01111 = 00000)
-// after 4 times, n becomes 0; hence there are 4 1s in your original binary form of int 23
-```
+### Clear Lowest Set Bit
+- `n & (n-1)` clears the rightmost 1 bit
+- Example: `12 & 11 = 8` (1100 & 1011 = 1000)
 
-- in short:
+### Count Set Bits
+- `n & (n-1)` clears the rightmost 1 bit
+- Example: `12 & 11 = 8` (1100 & 1011 = 1000)
 
-```java
-int count_one(int n) {
-    while(n) {
-        n = n&(n-1);
-        count++;
-    }
-    return count;
-}
-```
+### Check if Number is Negative
+- `n < 0` checks if the number is negative
+- Example: `-1 < 0` (True)
 
-## References:
-
-- https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently
+### Swap Two Numbers
+- `a ^= b; b ^= a; a ^= b;` swaps two numbers without using a temporary variable
+- Example: `a = 5, b = 3` -> `a = 3, b = 5`

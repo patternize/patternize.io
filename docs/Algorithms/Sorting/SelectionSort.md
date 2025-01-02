@@ -27,6 +27,7 @@ export const SelectionSort = ({ data }) => {
     )
 };
 
+<br/>
 <SelectionSort data={[
           [29, 72, 98, 13, 87, 66, 52, 51, 36],
           [13, 72, 98, 29, 87, 66, 52, 51, 36],

@@ -15,6 +15,19 @@ import { Array, VerticalBarChart, Button } from '@patternize/components';
 
 export const BubbleSort = ({ data }) => {
     const [index, setIndex] = React.useState(0);
+    const steps = [
+        "Initial array",
+        "Compare 5,1: Swap since 5 > 1",
+        "Compare 5,4: Swap since 5 > 4",
+        "Compare 5,2: Swap since 5 > 2",
+        "Compare 5,8: No swap since 5 < 8 (largest element bubbled to end)",
+        "Compare 1,4: No swap since 1 < 4",
+        "Compare 4,2: Swap since 4 > 2",
+        "Compare 4,5: No swap since 4 < 5",
+        "Compare 1,2: No swap since 1 < 2",
+        "Compare 2,4: No swap since 2 < 4",
+        "Array is now sorted!"
+    ];
     return (
         <div className={'controller'}>
             <Array data={data[index]} />
@@ -26,16 +39,25 @@ export const BubbleSort = ({ data }) => {
             <Button onClick={() => setIndex(index+1)} disabled={index == data.length - 1}>
                 Next
             </Button>
+            <span style={{marginLeft: '10px'}}>{steps[index]}</span>
         </div>
     )
 };
 
+<br/>
 <BubbleSort data={[
-        [5,1,4,2,8],
-        [1,5,4,2,8],
-        [1,4,5,2,8],
-        [1,4,2,5,8],
-        [1,2,4,5,8]]}/>
+    [5,1,4,2,8],     // Initial array
+    [1,5,4,2,8],     // After first comparison and swap
+    [1,4,5,2,8],     // After second comparison and swap
+    [1,4,2,5,8],     // After third comparison and swap
+    [1,4,2,5,8],     // After fourth comparison (no swap)
+    [1,4,2,5,8],     // After fifth comparison (no swap)
+    [1,2,4,5,8],     // After sixth comparison and swap
+    [1,2,4,5,8],     // After seventh comparison (no swap)
+    [1,2,4,5,8],     // After eighth comparison (no swap)
+    [1,2,4,5,8],     // After ninth comparison (no swap)
+    [1,2,4,5,8]      // Final sorted array
+]}/>
 
 ## Implementation
 - for every step, move largest element in left unsorted array to the end; in this caes, avoid inner loop to iterate through right sorted subarray

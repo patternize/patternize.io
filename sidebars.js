@@ -10,31 +10,55 @@ module.exports = {
     {
       type: "category",
       label: "Sorting",
+      collapsed: false,
       items: [
         "Algorithms/Sorting/BubbleSort",
-        "Algorithms/Sorting/OddEvenSort",
         "Algorithms/Sorting/SelectionSort",
         "Algorithms/Sorting/InsertionSort",
+        "Algorithms/Sorting/OddEvenSort", 
         "Algorithms/Sorting/MergeSort",
       ]
-    },{
+    },
+    {
       type: "category",
-      label: "Traversal",
+      label: "Backtracking",
+      collapsed: false,
+      items: [
+        "Algorithms/Backtracking/Introduction",
+        {
+          type: "category",
+          label: "Permutation",
+          items: ["Algorithms/Backtracking/Permutation/Permutation"]
+        },
+        "Algorithms/Backtracking/ExpressionPuzzle",
+        "Algorithms/Backtracking/ConfusingNumber"
+      ]
+    },
+    {
+      type: "category",
+      label: "Graph",
+      collapsed: false,
+      items: ["Algorithms/Graph/BFS", "Algorithms/Graph/DFS", "Algorithms/Graph/Dijkstra"]
+    },{
+      type: "category", 
+      label: "Industry Applications",
+      collapsed: false,
       items: ["Algorithms/ReactFiber/index"]
-    }
+    },
   ],
   "Data Structure": [
     {
       type: "category",
       label: "Basics",
+      collapsed: false,
       items: [
         {
           type: "category",
           label: "Binary Tree",
           items: [
             "DataStructures/Basic/BinaryTree/Definitions&&Properties",
-            "DataStructures/Basic/BinaryTree/BSTOperations",
             "DataStructures/Basic/BinaryTree/BSTTraversals",
+            "DataStructures/Basic/BinaryTree/BSTOperations",
             {
               type: "category",
               label: "Common Problems",
@@ -48,10 +72,20 @@ module.exports = {
               ]
             }
           ]
+        },
+        {
+          type: "category",
+          label: "Linked List",
+          items: [
+            "DataStructures/Basic/LinkedList/Introduction",
+            "DataStructures/Basic/LinkedList/Insertion",
+            "DataStructures/Basic/LinkedList/Deletion"
+          ]
         }
       ]
     },
     {
+      collapsed: false,
       type: "category",
       label: "Advanced",
       items: ["DataStructures/Advanced/VList"]
@@ -111,20 +145,6 @@ module.exports = {
   Patterns: [
     {
       type: "category",
-      label: "Backtracking",
-      items: [
-        "Patterns/Backtracking/Introduction",
-        {
-          type: "category",
-          label: "Permutation",
-          items: ["Patterns/Backtracking/Permutation/Permutation"]
-        },
-        "Patterns/Backtracking/ExpressionPuzzle",
-        "Patterns/Backtracking/ConfusingNumber"
-      ]
-    },
-    {
-      type: "category",
       label: "Dynamic Programming",
       items: [
         {
@@ -141,13 +161,24 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Bit Manipulation",
-      items: ["Patterns/BitManipulation/Introduction"]
+      label: "Sliding Window",
+      items: [
+        "Patterns/SlidingWindow/Introduction",
+        "Patterns/SlidingWindow/MaxSumSubarray"
+      ]
     },
     {
       type: "category",
-      label: "Graph",
-      items: ["QuestionBank/Leetcode/LC310"]
+      label: "Interval",
+      items: [
+        "Patterns/Interval/Introduction",
+        "Patterns/Interval/MergeIntervals"
+      ]
+    },
+    {
+      type: "category",
+      label: "Bit Manipulation",
+      items: ["Patterns/BitManipulation/Introduction"]
     }
-  ]
+  ],
 };
