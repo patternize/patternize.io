@@ -88,6 +88,12 @@ module.exports = {
     socials: {
       github: 'https://github.com/patternize/patternize.io',
     },
+    prism: {
+      theme: require('prism-react-renderer/themes/github'),
+      darkTheme: require('prism-react-renderer/themes/dracula'),
+      defaultLanguage: 'javascript',
+      additionalLanguages: ['java', 'typescript', 'css', 'json', 'bash'],
+    },
   },
   presets: [
     [

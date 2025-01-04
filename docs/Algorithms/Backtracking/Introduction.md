@@ -5,11 +5,12 @@ sidebar_label: Introduction to Backtracking
 ---
 
 import { TreeChart } from '@patternize/components'
+import BrowserOnly from '@docusaurus/BrowserOnly'
 
-Have you ever run into these problems in your daily life?
-- For my luggage lock, what are some of the interesting password combination I can come up with? 🔐
-- For my living room, how many possible ways I can rearrange my sofa, table, speakers and TV? 📺
-- Or, yes! this is a good one, given a set of liquors and juice, what are possible cocktails I can come up with? 🍹
+Ever faced these intriguing puzzles in your daily life? 🤔
+- Cracking the perfect combination for your luggage lock - how many cool patterns could you create? 🔐
+- Playing interior designer in your living room - what's the most stylish way to arrange your furniture? 📺
+- Here's a fun one: channeling your inner mixologist - what amazing cocktails could you craft from your home bar? 🍹
 
 export const Backtracking = () => {
     const tree = {
@@ -94,33 +95,42 @@ export const Backtracking = () => {
             ]}
         ],
     };
-    return <>{typeof window !== 'undefined' &&  <TreeChart data={tree}/>}</>
+    return <BrowserOnly>
+        {() => <TreeChart data={tree}/>}
+    </BrowserOnly>
 }
 
 <Backtracking />
 
-## Backtracking
->"Backtracking can be defined as a general algorithmic technique that considers searching every possible combination in order to solve a computational problem."
+## Backtracking: The Art of Exploring All Possibilities
+>"Backtracking is like being a detective who methodically explores every possible clue to solve a mystery. It's an algorithmic technique that systematically searches through all potential combinations to find the perfect solution."
 
-## Intuitions of A Backtracking Problem
-1. The problem is about combinations, combinatorics, and permutation. Usually the problem has multiple possible solutions and it asks you to "list" or "enumerate" all the possible solutions.
-2. When you try to come up with an combination of both iteration and recursion. For example, you need to have a loop inside of a recursive function, and the loop's range depends on the function parameters:
+## How to Spot a Backtracking Problem 🔍
+1. **The Combination Challenge**: You're dealing with puzzles involving combinations, permutations, or multiple possible solutions. Think of it like creating different playlists from your favorite songs - there are many valid ways to arrange them!
 
-```java
+2. **The Recursive Dance**: Your solution needs both iteration and recursion working together in perfect harmony. Like a nested loop within a recursive function, where each iteration opens up new possibilities:
+
+```
 void someRecursiveFunction(int x, int y){
     /* do something... */
-	for(int i = 0; i < y; i++){
-	    /* do something in the for loop... */
-	    // call someRecursiveFunction with updated parameters
-		someRecursiveFunction(x, y+i);
-	}
-	/* do something else... */
+    for(int i = 0; i < y; i++){
+        /* do something in the for loop... */
+        // call someRecursiveFunction with updated parameters
+        someRecursiveFunction(x, y+i);
+    }
+    /* do something else... */
 }
 ```
 
-3. When you can prove that the solution needs a runtime of <img src="https://render.githubusercontent.com/render/math?math=O(n!)"/>
+3. **The Base Case**: You need to identify the point where you've found a valid solution. This is where you'll stop the recursion and return the result.
 
-## Backtracking Generalized Solution Template
+:::info
+The runtime of backtracking is O(n!)
+:::
+
+<details>
+<summary>Click to see example code</summary>
+Yes, this is a backtracking problem!
 
 ```java
 class Solution {
@@ -136,15 +146,15 @@ class Solution {
     }
 
     private void backtrack(int param1, int param2){
-    	// handle base case!
+        // handle base case!
         if(BaseCase qualified){
-        	// Add current result to the solution collection
-        	solutions.add(param2)
+            // Add current result to the solution collection
+            solutions.add(param2)
             return;
         }
 
         for(int i = 0; i< param1; i++){
-        	// 1. Handle edge case
+            // 1. Handle edge case
             if(count[i] == 0) continue;
             // 2. Prepare a possible solution using some variable
             result.set(level, nums[i]);
@@ -159,5 +169,4 @@ class Solution {
 }
 ```
 
-## References
-- [Geeksforgeeks: Intro to Backtracking](https://www.geeksforgeeks.org/backtracking-introduction/)
+</details>

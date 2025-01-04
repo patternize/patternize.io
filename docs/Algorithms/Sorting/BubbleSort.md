@@ -2,9 +2,16 @@
 id: BubbleSort
 title: Bubble Sort
 sidebar_label: Bubble Sort
+head:
+  - tag: link
+    attributes:
+      rel: stylesheet
+      href: /css/sorting.css
+      precedence: high
 ---
 
 import { Sorting } from '@patternize/components';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 ## Idea 
 - compare each item wth the item next to it, and swap positions if required
@@ -12,10 +19,9 @@ import { Sorting } from '@patternize/components';
 - algorithm repeats until we have a pass without swapping any elements
 
 ## Visualization
-
-<br/>
-
-<Sorting
+<BrowserOnly>
+{() => (
+  <Sorting
     data={[
     [5, 1, 4, 2, 8], // Initial array
     [1, 5, 4, 2, 8], // After first comparison and swap
@@ -42,7 +48,9 @@ import { Sorting } from '@patternize/components';
     'Compare 2,4: No swap since 2 < 4',
     'Array is now sorted!'
     ]}
-/>
+  />
+)}
+</BrowserOnly>
 
 ## Implementation
 - for every step, move largest element in left unsorted array to the end; in this caes, avoid inner loop to iterate through right sorted subarray

@@ -2,9 +2,16 @@
 id: MergeSort
 title: Merge Sort
 sidebar_label: Merge Sort
+head:
+  - tag: link
+    attributes:
+      rel: stylesheet
+      href: /css/sorting.css
+      precedence: high
 ---
 
 import { Sorting } from '@patternize/components';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 ## Idea
 - Uses divide and conquer paradigm
@@ -13,7 +20,9 @@ import { Sorting } from '@patternize/components';
 - Guaranteed O(n log n) performance regardless of input data
 
 ## Visualization
-<Sorting
+<BrowserOnly>
+{() => (
+  <Sorting
     data={[
     [6,3,8,1,5,2,7],     // Initial array
     [6,3,8,1,5,2,7],     // After first division
@@ -40,7 +49,9 @@ import { Sorting } from '@patternize/components';
     'Merge right halves: [2,5,7]',
     'Final merge: [1,2,3,5,6,7,8]'
     ]}
-/>
+  />
+)}
+</BrowserOnly>
 
 ## How It Works
 

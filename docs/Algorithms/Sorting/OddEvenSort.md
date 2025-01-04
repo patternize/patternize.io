@@ -2,9 +2,16 @@
 id: OddEvenSort
 title: Odd-Even Sort
 sidebar_label: Odd-Even Sort
++head:
++  - tag: link
++    attributes:
++      rel: stylesheet
++      href: /css/sorting.css
++      precedence: high
 ---
 
 import { Sorting } from '@patternize/components';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 ## Idea
 - Also known as Brick Sort
@@ -14,7 +21,9 @@ import { Sorting } from '@patternize/components';
 - Similar to bubble sort but with a different pattern of comparisons
 
 ## Visualization
-<Sorting
+<BrowserOnly>
+{() => (
+  <Sorting
     data={[
     [6,3,8,1,5,2,7,4],     // Initial array
     [6,3,8,1,5,2,7,4],     // Start even phase
@@ -43,7 +52,9 @@ import { Sorting } from '@patternize/components';
     'After final swaps: [1,2,3,4,5,6,7,8]',
     'Final sorted array'
     ]}
-/>
+  />
+)}
+</BrowserOnly>
 
 ## How It Works
 

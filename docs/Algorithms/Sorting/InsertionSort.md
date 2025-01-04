@@ -2,9 +2,16 @@
 id: InsertionSort
 title: Insertion Sort
 sidebar_label: Insertion Sort
+head:
+  - tag: link
+    attributes:
+      rel: stylesheet
+      href: /css/sorting.css
+      precedence: high
 ---
 
 import { Sorting } from '@patternize/components';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 ## Idea
 - The algorithm works similar to sorting playing cards in your hands
@@ -13,7 +20,9 @@ import { Sorting } from '@patternize/components';
 - Values from the unsorted part are picked and placed in the correct position in the sorted part
 
 ## Visualization
-<Sorting
+<BrowserOnly>
+{() => (
+  <Sorting
     data={[
     [7,3,5,1,9,4,6,2,8],     // Initial array
     [3,7,5,1,9,4,6,2,8],     // After inserting 3
@@ -36,7 +45,9 @@ import { Sorting } from '@patternize/components';
     'Take 2: Compare and shift larger elements, place 2 between 1 and 3',
     'Take 8: Compare and shift, place 8 between 7 and 9'
     ]}
-/>
+  />
+)}
+</BrowserOnly>
 
 
 ## Implementation

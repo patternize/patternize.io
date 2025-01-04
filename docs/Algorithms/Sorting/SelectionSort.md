@@ -2,15 +2,24 @@
 id: SelectionSort
 title: Selection Sort
 sidebar_label: Selection Sort
+head:
+  - tag: link
+    attributes:
+      rel: stylesheet
+      href: /css/sorting.css
+      precedence: high
 ---
 
 import { Sorting } from '@patternize/components';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 ## Idea
 The idea is to select the smallest element of remaining array and then swap it to the front.
 
 ## Visualization
-<Sorting
+<BrowserOnly>
+{() => (
+  <Sorting
     data={[
     [29, 72, 98, 13, 87, 66, 52, 51, 36],     // Initial array
     [13, 72, 98, 29, 87, 66, 52, 51, 36],     // After first swap
@@ -29,7 +38,9 @@ The idea is to select the smallest element of remaining array and then swap it t
     'Find minimum (52) and swap with fifth element',
     'Array is now sorted'
     ]}
-/>
+  />
+)}
+</BrowserOnly>
 
 ## Implementation
 - scan array, find the minimum element's index min_idx
