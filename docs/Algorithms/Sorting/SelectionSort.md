@@ -4,39 +4,32 @@ title: Selection Sort
 sidebar_label: Selection Sort
 ---
 
-import { Array, VerticalBarChart, Button } from '@patternize/components';
+import { Sorting } from '@patternize/components';
 
 ## Idea
 The idea is to select the smallest element of remaining array and then swap it to the front.
 
 ## Visualization
-
-export const SelectionSort = ({ data }) => {
-    const [index, setIndex] = React.useState(0);
-    return (
-        <div className={'controller'}>
-            <VerticalBarChart data={data[index]} />
-            <br/>
-            <Button onClick={() => setIndex(index-1)} disabled={index == 0}>
-                Previous
-            </Button>
-            <Button onClick={() => setIndex(index+1)} disabled={index == data.length - 1}>
-                Next
-            </Button>
-        </div>
-    )
-};
-
-<br/>
-<SelectionSort data={[
-          [29, 72, 98, 13, 87, 66, 52, 51, 36],
-          [13, 72, 98, 29, 87, 66, 52, 51, 36],
-          [13, 29, 98, 72, 87, 66, 52, 51, 36],
-          [13, 29, 36, 72, 87, 66, 52, 51, 98],
-          [13, 29, 36, 51, 87, 66, 52, 72, 98],
-          [13, 29, 36, 51, 52, 66, 87, 72, 98],
-          [13, 29, 36, 51, 52, 66, 72, 87, 98],
-      ]}/>
+<Sorting
+    data={[
+    [29, 72, 98, 13, 87, 66, 52, 51, 36],     // Initial array
+    [13, 72, 98, 29, 87, 66, 52, 51, 36],     // After first swap
+    [13, 29, 98, 72, 87, 66, 52, 51, 36],     // After second swap
+    [13, 29, 36, 72, 87, 66, 52, 51, 98],     // After third swap
+    [13, 29, 36, 51, 87, 66, 52, 72, 98],     // After fourth swap
+    [13, 29, 36, 51, 52, 66, 87, 72, 98],     // After fifth swap
+    [13, 29, 36, 51, 52, 66, 72, 87, 98]      // Final sorted array
+    ]}
+    steps={[
+    'Initial array',
+    'Find minimum (13) and swap with first element',
+    'Find minimum in remaining array (29) and swap with second element',
+    'Find minimum (36) and swap with third element',
+    'Find minimum (51) and swap with fourth element', 
+    'Find minimum (52) and swap with fifth element',
+    'Array is now sorted'
+    ]}
+/>
 
 ## Implementation
 - scan array, find the minimum element's index min_idx

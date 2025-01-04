@@ -4,7 +4,7 @@ title: Insertion Sort
 sidebar_label: Insertion Sort
 ---
 
-import { Array, VerticalBarChart, Button } from '@patternize/components';
+import { Sorting } from '@patternize/components';
 
 ## Idea
 - The algorithm works similar to sorting playing cards in your hands
@@ -13,38 +13,8 @@ import { Array, VerticalBarChart, Button } from '@patternize/components';
 - Values from the unsorted part are picked and placed in the correct position in the sorted part
 
 ## Visualization
-
-export const InsertionSort = ({ data }) => {
-    const [index, setIndex] = React.useState(0);
-    const steps = [
-        "Initial array: [7,3,5,1,9,4,6,2,8]",
-        "Take 3: Compare with 7, shift 7 right, place 3 at start",
-        "Take 5: Compare with 7 and 3, place 5 between 3 and 7",
-        "Take 1: Compare and shift all larger elements right, place 1 at start",
-        "Take 9: Compare with 7, no shift needed as 9 > 7",
-        "Take 4: Compare and shift larger elements, place 4 between 3 and 5",
-        "Take 6: Compare and shift, place 6 between 5 and 7",
-        "Take 2: Compare and shift larger elements, place 2 between 1 and 3",
-        "Take 8: Compare and shift, place 8 between 7 and 9"
-    ];
-    return (
-        <div className={'controller'}>
-            <Array data={data[index]} />
-            <VerticalBarChart data={data[index]} />
-            <br/>
-            <Button onClick={() => setIndex(index-1)} disabled={index == 0}>
-                Previous
-            </Button>
-            <Button onClick={() => setIndex(index+1)} disabled={index == data.length - 1}>
-                Next
-            </Button>
-            <span style={{marginLeft: '10px'}}>{steps[index]}</span>
-        </div>
-    )
-};
-
-<br/>
-<InsertionSort data={[
+<Sorting
+    data={[
     [7,3,5,1,9,4,6,2,8],     // Initial array
     [3,7,5,1,9,4,6,2,8],     // After inserting 3
     [3,5,7,1,9,4,6,2,8],     // After inserting 5
@@ -54,7 +24,19 @@ export const InsertionSort = ({ data }) => {
     [1,3,4,5,6,7,9,2,8],     // After inserting 6
     [1,2,3,4,5,6,7,9,8],     // After inserting 2
     [1,2,3,4,5,6,7,8,9]      // After inserting 8
-]}/>
+    ]}
+    steps={[
+    'Initial array',
+    'Take 3: Compare with 7, shift 7 right, place 3 at start',
+    'Take 5: Compare with 7 and 3, place 5 between 3 and 7',
+    'Take 1: Compare and shift all larger elements right, place 1 at start',
+    'Take 9: Compare with 7, no shift needed as 9 > 7',
+    'Take 4: Compare and shift larger elements, place 4 between 3 and 5',
+    'Take 6: Compare and shift, place 6 between 5 and 7',
+    'Take 2: Compare and shift larger elements, place 2 between 1 and 3',
+    'Take 8: Compare and shift, place 8 between 7 and 9'
+    ]}
+/>
 
 
 ## Implementation

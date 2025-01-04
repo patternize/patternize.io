@@ -4,7 +4,7 @@ title: Merge Sort
 sidebar_label: Merge Sort
 ---
 
-import { Array, VerticalBarChart, Button } from '@patternize/components';
+import { Sorting } from '@patternize/components';
 
 ## Idea
 - Uses divide and conquer paradigm
@@ -13,40 +13,8 @@ import { Array, VerticalBarChart, Button } from '@patternize/components';
 - Guaranteed O(n log n) performance regardless of input data
 
 ## Visualization
-
-export const MergeSort = ({ data }) => {
-    const [index, setIndex] = React.useState(0);
-    const steps = [
-        "Initial array: [6,3,8,1,5,2,7]",
-        "Divide into [6,3,8,1] and [5,2,7]",
-        "Divide left: [6,3] and [8,1]",
-        "Divide further: [6] and [3]",
-        "Merge: [3,6] (sorted pair)",
-        "Divide right: [8] and [1]",
-        "Merge: [1,8] (sorted pair)",
-        "Merge left halves: [1,3,6,8]",
-        "Divide right half: [5,2] and [7]",
-        "Merge right halves: [2,5,7]",
-        "Final merge: [1,2,3,5,6,7,8]"
-    ];
-    return (
-        <div className={'controller'}>
-            <Array data={data[index]} />
-            <VerticalBarChart data={data[index]} />
-            <br/>
-            <Button onClick={() => setIndex(index-1)} disabled={index == 0}>
-                Previous
-            </Button>
-            <Button onClick={() => setIndex(index+1)} disabled={index == data.length - 1}>
-                Next
-            </Button>
-            <span style={{marginLeft: '10px'}}>{steps[index]}</span>
-        </div>
-    )
-};
-
-<br/>
-<MergeSort data={[
+<Sorting
+    data={[
     [6,3,8,1,5,2,7],     // Initial array
     [6,3,8,1,5,2,7],     // After first division
     [6,3,8,1,5,2,7],     // Divide left half
@@ -58,7 +26,21 @@ export const MergeSort = ({ data }) => {
     [1,3,6,8,2,5,7],     // Merge part of right half
     [1,3,6,8,2,5,7],     // Merge right halves
     [1,2,3,5,6,7,8]      // Final merged array
-]}/>
+    ]}
+    steps={[
+    'Initial array',
+    'Divide into [6,3,8,1] and [5,2,7]',
+    'Divide left: [6,3] and [8,1]',
+    'Divide further: [6] and [3]',
+    'Merge: [3,6] (sorted pair)',
+    'Divide right: [8] and [1]',
+    'Merge: [1,8] (sorted pair)',
+    'Merge left halves: [1,3,6,8]',
+    'Divide right half: [5,2] and [7]',
+    'Merge right halves: [2,5,7]',
+    'Final merge: [1,2,3,5,6,7,8]'
+    ]}
+/>
 
 ## How It Works
 
