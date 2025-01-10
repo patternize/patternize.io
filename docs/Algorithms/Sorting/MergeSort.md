@@ -20,6 +20,8 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 - Guaranteed O(n log n) performance regardless of input data
 
 ## Visualization
+
+<br/>
 <BrowserOnly>
 {() => (
   <Sorting

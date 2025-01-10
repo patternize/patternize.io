@@ -21,6 +21,8 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 - Similar to bubble sort but with a different pattern of comparisons
 
 ## Visualization
+
+<br/>
 <BrowserOnly>
 {() => (
   <Sorting

@@ -20,6 +20,8 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 - Values from the unsorted part are picked and placed in the correct position in the sorted part
 
 ## Visualization
+
+<br/>
 <BrowserOnly>
 {() => (
   <Sorting

@@ -5,6 +5,7 @@ sidebar_label: Definition and Properties
 ---
 
 import { Tree } from '@patternize/components'
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 A binary tree is a hierarchical data structure that belongs to the family of *m*-ary trees, where each node can have an arbitrary number of children. Similar to other *m*-ary trees, binary trees are commonly implemented using a linked list structure. Each node in a binary tree consists of a value and two pointers, which reference the node's left and right children respectively.
 
@@ -38,10 +39,12 @@ export const BinaryTree = () => {
             }
         ]
     }
-    return <>{typeof window !== 'undefined' &&  <Tree inputData={tree} maxHeight={250}/>}</>
+    return <Tree inputData={tree} maxHeight={250}/>;
 }
 
-<BinaryTree />
+<BrowserOnly>
+    {() => <BinaryTree />}
+</BrowserOnly>
 <br/>
 
 :::info

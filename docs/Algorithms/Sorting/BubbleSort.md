@@ -19,6 +19,8 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 - algorithm repeats until we have a pass without swapping any elements
 
 ## Visualization
+
+<br/>
 <BrowserOnly>
 {() => (
   <Sorting

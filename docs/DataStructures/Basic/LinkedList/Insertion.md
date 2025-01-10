@@ -5,13 +5,16 @@ sidebar_label: Insertion Operations
 ---
 
 import { LLInsertOperation } from '@patternize/components';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 # Linked List Insertion
 
 ## Visualization
 Watch how elements are inserted into a linked list:
 
-<LLInsertOperation />
+<BrowserOnly>
+    {() => <LLInsertOperation />}
+</BrowserOnly>
 
 ## Types of Insertion
 

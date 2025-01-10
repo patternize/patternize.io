@@ -5,13 +5,18 @@ sidebar_label: Deletion Operations
 ---
 
 import { LLRemoveOperation } from '@patternize/components';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 # Linked List Deletion
 
 ## Visualization
 Watch how elements are removed from a linked list:
 
-<LLRemoveOperation />
+
+<BrowserOnly>
+    {() => <LLRemoveOperation />}
+</BrowserOnly>
+
 
 ## Types of Deletion
 

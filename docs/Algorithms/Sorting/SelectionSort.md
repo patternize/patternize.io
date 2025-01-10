@@ -17,6 +17,8 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 The idea is to select the smallest element of remaining array and then swap it to the front.
 
 ## Visualization
+
+<br/>
 <BrowserOnly>
 {() => (
   <Sorting
