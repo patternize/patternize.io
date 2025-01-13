@@ -1,6 +1,6 @@
 ---
 slug: intro-to-react-fiber
-title: Introduction to React Fiber
+title: React Fiber
 description: A comprehensive guide to understanding React Fiber, its architecture, and how it improves React performance
 keywords: [react, react fiber, javascript, web development, performance]
 image: ./diff.jpg
@@ -8,7 +8,7 @@ authors: [gazcn007]
 tags: [react, javascript, web development]
 ---
 
-import { ReactFiber, MorrisTraversal, ConcurrentTraversal, DFSTraversal } from '@patternize/components';
+import { ReactFiberStory, MorrisTraversalStory, ConcurrentTraversalStory, DFSTraversalStory } from '@patternize/components';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
 :::info
@@ -25,7 +25,7 @@ You can first experience the difference between React Fiber (v17+) and pre-Fiber
 
 <BrowserOnly>
 {() => (
-  <ReactFiber />
+  <ReactFiberStory />
 )}
 </BrowserOnly>
 
@@ -70,7 +70,7 @@ Well, there are two problems with traversing the tree using recursion, we all kn
 
 <BrowserOnly>
 {() => (
-  <DFSTraversal />
+  <DFSTraversalStory />
 )}
 </BrowserOnly>
 
@@ -82,7 +82,7 @@ Morris Traversal is a way to traverse a tree without using recursion. It is a li
 
 <BrowserOnly>
 {() => (
-  <MorrisTraversal />
+  <MorrisTraversalStory />
 )}
 </BrowserOnly>
 <br/>
@@ -101,6 +101,6 @@ This is how React Fiber achieves concurrent rendering, you can see the animation
 
 <BrowserOnly>
 {() => (
-  <ConcurrentTraversal />
+  <ConcurrentTraversalStory />
 )}
 </BrowserOnly>

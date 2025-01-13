@@ -5,7 +5,8 @@ description: Understanding Dijkstra's shortest path algorithm and its implementa
 keywords: [dijkstra, shortest path, graph algorithms, weighted graphs]
 ---
 
-import { GraphDijkstra } from '@patternize/components';
+import { GraphDijkstraStory } from '@patternize/components';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 # Dijkstra's Algorithm
 
@@ -17,7 +18,9 @@ Dijkstra's algorithm finds the shortest path between nodes in a weighted graph, 
 
 Try Dijkstra's algorithm on this interactive graph:
 
-<GraphDijkstra />
+<BrowserOnly>
+{() => <GraphDijkstraStory />}
+</BrowserOnly>
 <br/>
 
 

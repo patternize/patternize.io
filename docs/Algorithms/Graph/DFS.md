@@ -5,13 +5,16 @@ description: Understanding Depth First Search algorithm and its implementation
 keywords: [dfs, depth first search, graph algorithms, graph traversal]
 ---
 
-import { GraphDFS } from '@patternize/components';
+import { GraphDFSStory } from '@patternize/components';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 ## Interactive Visualization
 
 Experiment with DFS using this interactive visualization:
 
-<GraphDFS />
+<BrowserOnly>
+{() => <GraphDFSStory />}
+</BrowserOnly>
 <br/>
 
 # Depth First Search (DFS)

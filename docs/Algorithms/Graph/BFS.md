@@ -5,13 +5,16 @@ description: Understanding Breadth First Search algorithm and its implementation
 keywords: [bfs, breadth first search, graph algorithms, graph traversal]
 ---
 
-import { GraphBFS } from '@patternize/components';
+import { GraphBFSStory } from '@patternize/components';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 ## Interactive Visualization
 
 Try out BFS on this interactive graph:
 
-<GraphBFS />
+<BrowserOnly>
+{() => <GraphBFSStory />}
+</BrowserOnly>
 <br/>
 
 

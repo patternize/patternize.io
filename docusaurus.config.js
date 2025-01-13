@@ -1,6 +1,6 @@
 module.exports = {
   title: "Patternize.io",
-  tagline: "Patternize Algorithms and Data Structure",
+  tagline: "Visualize Algorithms & Data Structures in Action",
   baseUrl: "/",
   favicon: "img/favicon.ico",
   organizationName: "Patternize", // Usually your GitHub org/user name.
@@ -25,16 +25,10 @@ module.exports = {
           activeBasePath: "docs/DataStructures"
         },
         {
-          to: "docs/Patterns/DynamicProgramming/Coordinate/intro",
-          label: "Patterns",
+          to: "docs/Applications/ReactFiber/intro-to-react-fiber",
+          label: "Applications",
           position: "left",
-          activeBasePath: "docs/Patterns"
-        },
-        {
-          to: "docs/Language/Java/Overview",
-          label: "Language",
-          position: "left",
-          activeBasePath: "docs/Language"
+          activeBasePath: "docs/Applications"
         },
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
@@ -82,7 +76,7 @@ module.exports = {
     },
     algolia: {
       appId: 'BL2GDNRTKH',
-      apiKey: "b3b4a1801c88dedb7dc0785d10a51de3",
+      apiKey: "8adbddd2627f1fda49d44116656932ff",
       indexName: "patternize_io"
     },
     socials: {
