@@ -88,6 +88,20 @@ module.exports = {
       defaultLanguage: 'javascript',
       additionalLanguages: ['java', 'typescript', 'css', 'json', 'bash'],
     },
+    metadata: [
+      {name: 'keywords', content: 'algorithms, data structures, visualization, programming, computer science, learning'},
+      {name: 'description', content: 'Interactive visualizations of algorithms and data structures for better learning'},
+      {name: 'og:type', content: 'website'},
+      {name: 'og:title', content: 'Patternize.io - Algorithm Visualizations'},
+      {name: 'og:description', content: 'Learn algorithms and data structures through interactive visualizations'},
+      {name: 'og:image', content: 'https://patternize.github.io/img/og-image.png'},
+      {name: 'twitter:card', content: 'summary_large_image'},
+      {name: 'canonical', content: 'https://patternize.github.io/docs/Applications/ReactFiber/intro-to-react-fiber'},
+      {
+        name: 'google-site-verification',
+        content: 'JN9CClo-YacOkqWq94rsPvJaScJJpeowfQaO7TF6Dvw'
+      },
+    ],
   },
   presets: [
     [
@@ -100,7 +114,13 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css")
-        }
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        },
       }
     ]
   ],

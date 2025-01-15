@@ -1,8 +1,8 @@
 ---
 slug: intro-to-react-fiber
-title: React Fiber
-description: A comprehensive guide to understanding React Fiber, its architecture, and how it improves React performance
-keywords: [react, react fiber, javascript, web development, performance]
+title: React Fiber - Understanding React's Reconciliation Algorithm
+description: A comprehensive guide to understanding React Fiber, its architecture, and how it improves React performance through concurrent rendering
+keywords: [react fiber, react internals, react reconciliation, javascript, web development, concurrent rendering]
 image: ./diff.jpg
 authors: [gazcn007]
 tags: [react, javascript, web development]
