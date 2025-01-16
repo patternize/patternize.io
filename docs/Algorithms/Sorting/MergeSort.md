@@ -10,7 +10,7 @@ head:
       precedence: high
 ---
 
-import { Sorting } from '@patternize/components';
+import { MergeSortStory } from '@patternize/components';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
 ## Idea
@@ -23,36 +23,7 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 
 <br/>
 <BrowserOnly>
-{() => (
-  <Sorting
-    data={[
-    [6,3,8,1,5,2,7],     // Initial array
-    [6,3,8,1,5,2,7],     // After first division
-    [6,3,8,1,5,2,7],     // Divide left half
-    [6,3,8,1,5,2,7],     // Divide further left
-    [3,6,8,1,5,2,7],     // First merge
-    [3,6,1,8,5,2,7],     // Divide right part of left half
-    [3,6,1,8,5,2,7],     // Second merge
-    [1,3,6,8,5,2,7],     // Merge left halves
-    [1,3,6,8,2,5,7],     // Merge part of right half
-    [1,3,6,8,2,5,7],     // Merge right halves
-    [1,2,3,5,6,7,8]      // Final merged array
-    ]}
-    steps={[
-    'Initial array',
-    'Divide into [6,3,8,1] and [5,2,7]',
-    'Divide left: [6,3] and [8,1]',
-    'Divide further: [6] and [3]',
-    'Merge: [3,6] (sorted pair)',
-    'Divide right: [8] and [1]',
-    'Merge: [1,8] (sorted pair)',
-    'Merge left halves: [1,3,6,8]',
-    'Divide right half: [5,2] and [7]',
-    'Merge right halves: [2,5,7]',
-    'Final merge: [1,2,3,5,6,7,8]'
-    ]}
-  />
-)}
+{() => (<MergeSortStory />)}
 </BrowserOnly>
 
 ## How It Works

@@ -1,6 +1,6 @@
 ---
 slug: intro-to-react-fiber
-title: React Fiber - Understanding React's Reconciliation Algorithm
+title: React Fiber - The Game Changer ⚛️
 description: A comprehensive guide to understanding React Fiber, its architecture, and how it improves React performance through concurrent rendering
 keywords: [react fiber, react internals, react reconciliation, javascript, web development, concurrent rendering]
 image: ./diff.jpg
@@ -23,11 +23,14 @@ It's recommended to have a basic understanding of React, virtualDOM, and diff be
 
 You can first experience the difference between React Fiber (v17+) and pre-Fiber (v16) by playing with the playground below:
 
+:::info Playground
+
 <BrowserOnly>
 {() => (
   <ReactFiberStory />
 )}
 </BrowserOnly>
+:::
 
 You can tell a huge difference between the two versions, the old reconcilor is very slow, but the fiber one is very smooth.
 
@@ -68,11 +71,14 @@ Well, there are two problems with traversing the tree using recursion, we all kn
 
 **Here is an interactive demoof the call stack of the recursion stack:**
 
+:::info Playground
+
 <BrowserOnly>
 {() => (
   <DFSTraversalStory />
 )}
 </BrowserOnly>
+:::
 
 ## Solution to the problems - Morris Traversal
 
@@ -80,12 +86,14 @@ Morris Traversal is a way to traverse a tree without using recursion. It is a li
 
 **Here is an interactive slide show of traversing the tree with Morris Traversal:**
 
+:::info Playground
 <BrowserOnly>
 {() => (
   <MorrisTraversalStory />
 )}
 </BrowserOnly>
 <br/>
+:::
 
 **With Morris Traversal, the call stack is constant O(1) space. Runtime is O(1) for each evaluation. And you can pause the traversal anytime!**
 
@@ -99,8 +107,11 @@ What you can do with fiber once you have O(1) time and space for each evaluation
 
 This is how React Fiber achieves concurrent rendering, you can see the animation below:
 
+:::info Playground
+
 <BrowserOnly>
 {() => (
   <ConcurrentTraversalStory />
 )}
 </BrowserOnly>
+:::

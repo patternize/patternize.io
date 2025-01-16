@@ -25,10 +25,10 @@ module.exports = {
           activeBasePath: "docs/DataStructures",
         },
         {
-          to: "docs/Applications/ReactFiber/intro-to-react-fiber",
-          label: "Applications",
+          to: "docs/Stories/ManhattanDistance/manhattan-distance",
+          label: "Interactive Stories",
           position: "left",
-          activeBasePath: "docs/Applications",
+          activeBasePath: "docs/Stories",
         },
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
