@@ -1,7 +1,10 @@
 ---
 id: Introduction
-title: Introduction to Backtracking
+title: Backtracking Algorithm
 sidebar_label: Introduction to Backtracking
+description: Learn backtracking algorithms with step-by-step examples. Master problem-solving techniques for combinations, permutations, and optimization problems.
+keywords: [backtracking algorithm, backtracking examples, recursive backtracking, algorithm optimization, problem solving, programming techniques]
+sidebar_position: 1
 ---
 
 import { TreeChart } from '@patternize/components'

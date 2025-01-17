@@ -3,13 +3,7 @@ id: BubbleSort
 title: Bubble Sort
 sidebar_label: Bubble Sort
 description: Learn Bubble Sort algorithm with interactive visualization. Understand how bubble sort works with step-by-step examples.
-keywords: [bubble sort, sorting algorithm, algorithm visualization, computer science]
-head:
-  - tag: link
-    attributes:
-      rel: stylesheet
-      href: /css/sorting.css
-      precedence: high
+keywords: [bubble sort, sorting algorithm, algorithm visualization, computer science, data structures, comparison sort, stable sort, in-place sorting]
 ---
 
 import { Sorting } from '@patternize/components';

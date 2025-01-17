@@ -2,6 +2,8 @@
 id: Insertion
 title: Linked List Insertion
 sidebar_label: Insertion Operations
+description: Learn how to insert elements into a linked list with detailed explanations of head insertion, tail insertion, and position-based insertion. Includes time complexity analysis and code examples.
+keywords: [linked list insertion, linked list operations, data structures, insert at head, insert at tail, insert at position, time complexity, java implementation]
 ---
 
 import { LLInsertOperation } from '@patternize/components';

@@ -1,7 +1,14 @@
 ---
 id: SegmentTree
-title: Segment Tree
+title: Segment Tree Data Structure
 sidebar_label: Segment Tree
+description: Learn about Segment Tree data structure - how it works, range queries, updates, and time complexity. Includes implementation examples in Java and common use cases.
+keywords: [segment tree, data structure, range queries, range updates, tree data structure, segment tree implementation, java segment tree]
+head:
+  - tag: meta
+    attributes:
+      name: robots
+      content: index, follow
 ---
 
 ## Idea

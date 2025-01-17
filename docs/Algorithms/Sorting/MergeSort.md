@@ -2,12 +2,8 @@
 id: MergeSort
 title: Merge Sort
 sidebar_label: Merge Sort
-head:
-  - tag: link
-    attributes:
-      rel: stylesheet
-      href: /css/sorting.css
-      precedence: high
+description: Learn Merge Sort algorithm with interactive visualization. Understand how merge sort works with step-by-step examples, implementation, and time complexity analysis.
+keywords: [merge sort, sorting algorithm, algorithm visualization, computer science, data structures, divide and conquer, stable sort, comparison sort, recursive sorting]
 ---
 
 import { MergeSortStory } from '@patternize/components';

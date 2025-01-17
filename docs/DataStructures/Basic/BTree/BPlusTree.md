@@ -1,13 +1,14 @@
 ---
-id: BTree
-title: B Tree
-sidebar_label: B Tree
+id: BPlusTree
+title: B+ Tree Data Structure
+sidebar_label: B+ Tree
+description: Learn about B+ Tree data structure - how it works, properties, insertion, deletion, and time complexity. Includes interactive visualizations and step-by-step examples.
+keywords: [B+ Tree, data structure, tree data structure, balanced tree, database indexing, B+ tree insertion, B+ tree deletion]
 head:
-  - tag: link
+  - tag: meta
     attributes:
-      rel: stylesheet
-      href: /css/sorting.css
-      precedence: high
+      name: robots
+      content: index, follow
 ---
 
 import { BTreeInsertion, BTreeDeletion } from '@patternize/components';

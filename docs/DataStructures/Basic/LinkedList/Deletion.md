@@ -1,7 +1,9 @@
 ---
 id: Deletion
-title: Linked List Deletion
+title: How to Delete Elements from a Linked List
 sidebar_label: Deletion Operations
+description: Learn different methods to delete nodes from a linked list including head deletion, tail deletion, and deletion by value. Includes time complexity analysis and code examples.
+keywords: [linked list deletion, delete node linked list, remove elements linked list, linked list operations, data structures, java linked list, head deletion, tail deletion]
 ---
 
 import { LLRemoveOperation } from '@patternize/components';

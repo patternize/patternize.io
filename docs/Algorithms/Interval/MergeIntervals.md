@@ -2,6 +2,8 @@
 id: MergeIntervals
 title: Merge Intervals Pattern
 sidebar_label: Merge Intervals
+description: Learn how to solve interval merging problems with step-by-step explanations and examples. Master techniques for handling overlapping intervals in programming interviews.
+keywords: [merge intervals, interval algorithms, overlapping intervals, algorithm patterns, interval merging, coding interview, computer science, data structures, interval problems, programming techniques]
 ---
 
 ## Pattern Description

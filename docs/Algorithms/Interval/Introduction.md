@@ -1,7 +1,9 @@
 ---
 id: Introduction
-title: Sliding Window Pattern
+title: Introduction to Interval Problems
 sidebar_label: Introduction
+description: Master interval-based algorithms and problem-solving techniques. Learn how to handle interval overlaps, merges, and scheduling problems efficiently.
+keywords: [interval algorithms, interval scheduling, algorithm visualization, computer science, range problems, overlap detection, interval merging]
 ---
 
 # Interval Pattern

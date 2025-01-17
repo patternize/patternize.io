@@ -2,12 +2,8 @@
 id: OddEvenSort
 title: Odd-Even Sort
 sidebar_label: Odd-Even Sort
-+head:
-+  - tag: link
-+    attributes:
-+      rel: stylesheet
-+      href: /css/sorting.css
-+      precedence: high
+description: Learn Odd-Even Sort algorithm with interactive visualization. Understand how odd-even sort (brick sort) works with step-by-step examples and implementation.
+keywords: [odd even sort, brick sort, sorting algorithm, algorithm visualization, computer science, data structures, comparison sort, parallel sorting, distributed sorting]
 ---
 
 import { Sorting } from '@patternize/components';

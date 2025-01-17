@@ -1,7 +1,9 @@
 ---
-id: BSTOperations
-title: Basic Operations
-sidebar_label: Basic Operations
+id: binary-search-tree-operations
+title: Binary Search Tree (BST) Operations
+sidebar_label: BST Operations
+description: Learn about fundamental Binary Search Tree operations including lookup, insertion and deletion. Includes code examples and time complexity analysis.
+keywords: [binary search tree operations, BST lookup, BST search, tree traversal, data structures, algorithms, time complexity, java, javascript]
 ---
 
 ### Lookup

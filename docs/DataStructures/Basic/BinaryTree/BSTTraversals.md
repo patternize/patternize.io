@@ -1,8 +1,11 @@
 ---
 id: BSTTraversals
-title: Traversals
-sidbar_label: Traversals
+title: Binary Tree Traversals - BFS and DFS Explained
+description: Learn about different binary tree traversal methods including breadth-first search (BFS) and depth-first search (DFS) with pre-order, in-order, and post-order traversals. Includes code examples and visualizations.
+keywords: [binary tree traversal, BFS, DFS, pre-order traversal, in-order traversal, post-order traversal, tree algorithms, data structures]
+sidebar_label: Traversals
 ---
+
 import { BTDFSTraversalStory, BTBFSTraversalStory } from "@patternize/components"
 import BrowserOnly from '@docusaurus/BrowserOnly';
 

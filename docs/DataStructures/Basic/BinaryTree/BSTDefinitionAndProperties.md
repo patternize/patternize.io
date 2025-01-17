@@ -1,7 +1,10 @@
---- 
-id: Definitions&&Properties
-title: Definition and Properties
-sidebar_label: Definition and Properties
+---
+id: binary-search-tree-definition-properties
+title: Binary Search Tree (BST) - Definition, Properties and Implementation Guide
+sidebar_label: BST Definition & Properties
+description: Learn about Binary Search Trees (BST), their key properties, implementation details and common operations. Includes code examples in Java.
+keywords: [binary search tree, BST, tree data structure, binary tree properties, BST implementation, tree traversal, java data structures]
+sidebar_position: 1
 ---
 
 import { Tree } from '@patternize/components'

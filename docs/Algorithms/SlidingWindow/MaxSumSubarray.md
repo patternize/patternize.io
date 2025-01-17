@@ -1,7 +1,9 @@
 ---
 id: MaxSumSubarray
-title: Maximum Sum Subarray of Size K
-sidebar_label: Max Sum Subarray
+title: Maximum Sum Subarray
+sidebar_label: Maximum Sum Subarray
+description: Learn how to solve the Maximum Sum Subarray problem using the Sliding Window technique. Interactive visualization and step-by-step solution explained.
+keywords: [maximum sum subarray, sliding window, kadane's algorithm, algorithm visualization, dynamic programming, array algorithms, coding problems]
 ---
 
 import { Array, VerticalBarChart, Button } from '@patternize/components';

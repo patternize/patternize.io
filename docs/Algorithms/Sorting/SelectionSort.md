@@ -2,12 +2,8 @@
 id: SelectionSort
 title: Selection Sort
 sidebar_label: Selection Sort
-head:
-  - tag: link
-    attributes:
-      rel: stylesheet
-      href: /css/sorting.css
-      precedence: high
+description: Learn Selection Sort algorithm with interactive visualization. Understand how selection sort works with step-by-step examples, implementation, and complexity analysis.
+keywords: [selection sort, sorting algorithm, algorithm visualization, computer science, data structures, comparison sort, in-place sorting, unstable sort, elementary sorting]
 ---
 
 import { Sorting } from '@patternize/components';

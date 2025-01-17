@@ -1,7 +1,9 @@
 ---
-id: Permutation
-title: Permutation of Elements
-sidebar_label: Permutation of Elements
+slug: permutation-backtracking
+title: Find Permutations using Backtracking
+description: Learn how to solve permutation problems using backtracking algorithms. Includes detailed explanations, examples, and Java/Python solutions for generating all possible permutations.
+keywords: [permutation, backtracking, algorithms, combinations, recursion, algorithm visualization, java, python]
+tags: ['Backtracking', 'Permutation', 'Recursion']
 ---
 
 This is a classic set of problems that can be solved using Backtracking.

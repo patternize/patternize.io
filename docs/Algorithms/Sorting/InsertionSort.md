@@ -2,12 +2,8 @@
 id: InsertionSort
 title: Insertion Sort
 sidebar_label: Insertion Sort
-head:
-  - tag: link
-    attributes:
-      rel: stylesheet
-      href: /css/sorting.css
-      precedence: high
+description: Learn Insertion Sort algorithm with interactive visualization. Understand how insertion sort works with step-by-step examples and implementation.
+keywords: [insertion sort, sorting algorithm, algorithm visualization, computer science, data structures, comparison sort, stable sort, in-place sorting, adaptive sorting]
 ---
 
 import { Sorting } from '@patternize/components';

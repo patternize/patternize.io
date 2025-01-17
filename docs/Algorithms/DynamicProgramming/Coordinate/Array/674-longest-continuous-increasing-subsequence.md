@@ -1,6 +1,9 @@
 ---
+slug: longest-continuous-increasing-subsequence
 title: Leetcode 674. Longest Continuous Increasing Subsequence
-tags: ['DynamicProgramming/Coordinate']
+description: Learn how to find the longest continuous increasing subsequence in an array using dynamic programming. Includes detailed explanation, examples, and Java/Python solutions.
+keywords: [longest continuous increasing subsequence, dynamic programming, array algorithms, leetcode 674, increasing subarray, algorithm visualization]
+tags: ['DynamicProgramming/Coordinate', 'Array', 'Subsequence']
 ---
 
 import Tabs from '@theme/Tabs';

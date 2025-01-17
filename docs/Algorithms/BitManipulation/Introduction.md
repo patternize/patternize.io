@@ -1,7 +1,9 @@
 ---
-id: Introduction
-title: Bit Manipulation
-sidebar_label: Introduction
+slug: bit-manipulation
+title: Bit Manipulation Operations and Tricks
+description: Learn essential bit manipulation operations and common tricks in programming. Includes detailed explanations of bitwise operators, examples, and practical applications.
+keywords: [bit manipulation, bitwise operators, bit operations, bit tricks, programming, binary operations, AND, OR, XOR, bit shifting]
+tags: ['BitManipulation', 'BinaryOperations', 'Programming']
 ---
 
 # Common Bit Manipulation Operations

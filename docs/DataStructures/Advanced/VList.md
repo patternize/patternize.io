@@ -1,7 +1,9 @@
 ---
-id: VList
-title: VList
-sidebar_label: VList
+id: vlist
+title: VList Data Structure - A Memory Efficient Alternative to ArrayList
+sidebar_label: VList Implementation
+description: Learn about VList - an efficient data structure similar to ArrayList but with O(log n) access and memory optimization through linked array segments.
+keywords: [vlist, data structure, arraylist alternative, java implementation, memory efficient, algorithm, linked array segments]
 ---
 
 # VList

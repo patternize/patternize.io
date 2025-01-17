@@ -19,7 +19,7 @@ module.exports = {
           activeBasePath: "Algorithms",
         },
         {
-          to: "DataStructures/Basic/BinaryTree/Definitions&&Properties",
+          to: "DataStructures/Basic/BinaryTree/binary-search-tree-definition-properties",
           label: "Data Structures",
           position: "left",
           activeBasePath: "DataStructures",
@@ -129,23 +129,18 @@ module.exports = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
-      },
-    ],
-  ],
-  plugins: [
-    [
-      "@docusaurus/plugin-sitemap",
-      {
-        changefreq: "weekly",
-        priority: 0.5,
-        ignorePatterns: [
-          "**/tags/**",
-          "**/search/**",
-          "**/404/**",
-          "**/blog/**",
-          "**/archive/**",
-        ],
-        filename: "sitemap.xml",
+        sitemap: {
+          changefreq: "weekly",
+          priority: 0.5,
+          ignorePatterns: [
+            "**/tags/**",
+            "**/search/**",
+            "**/404/**",
+            "**/blog/**",
+            "**/archive/**",
+          ],
+          filename: "sitemap.xml",
+        },
       },
     ],
   ],

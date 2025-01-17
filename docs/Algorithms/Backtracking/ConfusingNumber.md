@@ -1,7 +1,16 @@
 ---
-id: ConfusingNumber
-title: Confusing Number
-sidebar_label: Confusing Number
+id: confusing-number
+title: Confusing Number - Backtracking Algorithm for Rotated Digits
+sidebar_label: Confusing Number Algorithm
+description: Learn how to solve the Confusing Number problem using backtracking. Find numbers that become different valid numbers when rotated 180 degrees.
+keywords:
+  - confusing number
+  - rotated digits
+  - backtracking
+  - algorithm
+  - leetcode
+  - programming
+  - interview preparation
 ---
 ## Problem Description
 

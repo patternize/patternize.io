@@ -1,10 +1,10 @@
 ---
 slug: manhattan-distance
 title: Manhattan Distance - Optimized Navigation 🏙
-description: "The Manhattan Distance Mystery: Finding the Farthest Friends"
-keywords: [manhattan distance, geometry, distance, algorithm]
+description: "Learn how to calculate Manhattan Distance (city block distance) efficiently. Includes optimized algorithms, time complexity analysis, and practical examples."
+keywords: [manhattan distance, city block distance, taxicab geometry, L1 distance, manhattan distance algorithm, manhattan distance calculator, manhattan distance formula, manhattan distance python, manhattan distance java]
 authors: [gazcn007]
-tags: [geometry, manhattan distance, algorithm]
+tags: [algorithms, geometry, optimization, distance-calculation, computational-geometry]
 ---
 
 

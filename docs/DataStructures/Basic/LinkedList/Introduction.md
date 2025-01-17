@@ -1,7 +1,9 @@
 ---
-id: Introduction
-title: Linked List
-sidebar_label: Introduction
+id: linked-list-data-structure
+title: Linked List Data Structure
+sidebar_label: Linked List Introduction
+description: Learn about linked list data structure, its types, operations, time complexity, advantages and implementation with code examples in Java. Master linked lists for coding interviews.
+keywords: [linked list, data structure, singly linked list, doubly linked list, circular linked list, linked list implementation, linked list java]
 ---
 
 # Linked List

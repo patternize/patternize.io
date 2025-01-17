@@ -1,7 +1,9 @@
 ---
 id: Introduction
-title: Sliding Window Pattern
+title: Introduction to Sliding Window
 sidebar_label: Introduction
+description: Learn the Sliding Window algorithm pattern with interactive visualizations. Master this essential technique for solving array and string problems efficiently.
+keywords: [sliding window algorithm, algorithm patterns, subarray problems, string algorithms, algorithm visualization, computer science, coding interview]
 ---
 
 # Sliding Window Pattern

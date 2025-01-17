@@ -1,7 +1,9 @@
 ---
 id: ExpressionPuzzle
-title: Expression Puzzle
+title: Solving Expression Puzzles with Backtracking
 sidebar_label: Expression Puzzle
+description: Learn how to solve cryptarithmetic and expression puzzles using backtracking algorithms. Includes detailed explanations, examples, and Java solutions.
+keywords: [expression puzzle, cryptarithmetic puzzle, backtracking algorithm, puzzle solving, algorithm optimization, programming techniques, java]
 ---
 
 ## Problem Description
