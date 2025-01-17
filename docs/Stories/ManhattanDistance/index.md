@@ -70,4 +70,4 @@ This trick isn't just for finding the farthest friends on a grid. It has some ex
 
 ### Related Problems
 
-[1131. Maximum of Absolute Value Expression](/docs/QuestionBank/Leetcode/LC1131)
+[1131. Maximum of Absolute Value Expression](/QuestionBank/Leetcode/LC1131)

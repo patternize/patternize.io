@@ -13,22 +13,22 @@ module.exports = {
       },
       items: [
         {
-          to: "docs/Algorithms/Sorting/BubbleSort",
+          to: "Algorithms/Sorting/BubbleSort",
           label: "Algorithms",
           position: "left",
-          activeBasePath: "docs/Algorithms",
+          activeBasePath: "Algorithms",
         },
         {
-          to: "docs/DataStructures/Basic/BinaryTree/Definitions&&Properties",
+          to: "DataStructures/Basic/BinaryTree/Definitions&&Properties",
           label: "Data Structures",
           position: "left",
-          activeBasePath: "docs/DataStructures",
+          activeBasePath: "DataStructures",
         },
         {
-          to: "docs/Stories/ManhattanDistance/manhattan-distance",
+          to: "Stories/ManhattanDistance/manhattan-distance",
           label: "Interactive Stories",
           position: "left",
-          activeBasePath: "docs/Stories",
+          activeBasePath: "Stories",
         },
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
@@ -124,18 +124,28 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/edit/master/website/',
+          routeBasePath: "/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
-        sitemap: {
-          changefreq: "weekly",
-          priority: 0.5,
-          ignorePatterns: ["/tags/**"],
-          filename: "sitemap.xml",
-        },
+      },
+    ],
+  ],
+  plugins: [
+    [
+      "@docusaurus/plugin-sitemap",
+      {
+        changefreq: "weekly",
+        priority: 0.5,
+        ignorePatterns: [
+          "**/tags/**",
+          "**/search/**",
+          "**/404/**",
+          "**/blog/**",
+          "**/archive/**",
+        ],
+        filename: "sitemap.xml",
       },
     ],
   ],

@@ -2,6 +2,8 @@
 id: BubbleSort
 title: Bubble Sort
 sidebar_label: Bubble Sort
+description: Learn Bubble Sort algorithm with interactive visualization. Understand how bubble sort works with step-by-step examples.
+keywords: [bubble sort, sorting algorithm, algorithm visualization, computer science]
 head:
   - tag: link
     attributes:
