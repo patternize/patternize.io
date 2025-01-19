@@ -3,7 +3,7 @@ import styles from "./StarTipModal.module.css";
 
 export default function StarTipModal() {
   const [isVisible, setIsVisible] = useState(false);
-  const [scrollCount, setScrollCount] = useState(0);
+  const [_, setScrollCount] = useState(0);
 
   useEffect(() => {
     // Don't show on mobile
@@ -12,8 +12,7 @@ export default function StarTipModal() {
     // Check if we've shown the tip before
     const hasShownTip = localStorage.getItem("hasShownStarTip");
 
-    // if (!hasShownTip) {
-    if (true) {
+    if (!hasShownTip) {
       const handleScroll = () => {
         const currentScroll = window.scrollY;
         if (!window.lastScrollPosition) {
@@ -28,6 +27,7 @@ export default function StarTipModal() {
         // Update scroll count and show tip after enough scrolling
         setScrollCount((prev) => {
           const newCount = prev + scrollDelta;
+          console.log("newCount", newCount);
           if (newCount > 3500) {
             // Show after scrolling 3500px - indicates meaningful engagement with content
             setIsVisible(true);
@@ -46,7 +46,7 @@ export default function StarTipModal() {
         delete window.lastScrollPosition;
       };
     }
-  }, []); // Empty dependency array means this runs once on mount
+  }, [isVisible]); // Add isVisible to dependency array to re-run effect when visibility changes
 
   if (!isVisible) return null;
 
@@ -66,13 +66,14 @@ export default function StarTipModal() {
             },
           }}
         >
-          Think it’s cool? Drop a ⭐ and make our day!
+          Think it's cool? Drop a ⭐ and make our day!
         </a>
         <button
           className={styles.closeButton}
           onClick={(e) => {
             e.stopPropagation();
             setIsVisible(false);
+            delete window.lastScrollPosition;
           }}
           aria-label="Close tip"
         >
