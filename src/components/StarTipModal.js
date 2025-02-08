@@ -13,6 +13,12 @@ export default function StarTipModal() {
     const hasShownTip = localStorage.getItem("hasShownStarTip");
 
     if (!hasShownTip) {
+      // Set up timer for 2 minutes - this is a good baseline for engagement
+      const timer = setTimeout(() => {
+        setIsVisible(true);
+        localStorage.setItem("hasShownStarTip", "true");
+      }, 2 * 60 * 1000); // 2 minutes in milliseconds
+
       const handleScroll = () => {
         const currentScroll = window.scrollY;
         if (!window.lastScrollPosition) {
@@ -20,21 +26,24 @@ export default function StarTipModal() {
           return;
         }
 
-        // Calculate scroll distance
-        const scrollDelta = Math.abs(currentScroll - window.lastScrollPosition);
+        // Calculate scroll distance, but only count downward scrolling
+        const scrollDelta = currentScroll - window.lastScrollPosition;
         window.lastScrollPosition = currentScroll;
 
-        // Update scroll count and show tip after enough scrolling
-        setScrollCount((prev) => {
-          const newCount = prev + scrollDelta;
-          console.log("newCount", newCount);
-          if (newCount > 3500) {
-            // Show after scrolling 3500px - indicates meaningful engagement with content
-            setIsVisible(true);
-            localStorage.setItem("hasShownStarTip", "true");
-          }
-          return newCount;
-        });
+        // Only update count if scrolling down
+        if (scrollDelta > 0) {
+          setScrollCount((prev) => {
+            const newCount = prev + scrollDelta;
+            console.log("newCount", newCount);
+            if (newCount > 3500) {
+              // Show after scrolling 3500px - this shows more active engagement than time-based
+              setIsVisible(true);
+              localStorage.setItem("hasShownStarTip", "true");
+              clearTimeout(timer); // Clear timer if shown due to scrolling
+            }
+            return newCount;
+          });
+        }
       };
 
       // Add scroll event listener
@@ -44,6 +53,7 @@ export default function StarTipModal() {
       return () => {
         window.removeEventListener("scroll", handleScroll);
         delete window.lastScrollPosition;
+        clearTimeout(timer);
       };
     }
   }, [isVisible]); // Add isVisible to dependency array to re-run effect when visibility changes
@@ -66,7 +76,7 @@ export default function StarTipModal() {
             },
           }}
         >
-          Think it's cool? Drop a ⭐ and make our day!
+          Enjoying Patternize? Your ⭐ makes all the hard work worthwhile!
         </a>
         <button
           className={styles.closeButton}

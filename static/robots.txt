@@ -3,11 +3,3 @@ Allow: /
 
 # Sitemap
 Sitemap: https://patternize.github.io/sitemap.xml
-
-# Crawl-delay
-Crawl-delay: 10
-
-# Disallow patterns
-Disallow: /search
-Disallow: /404
-Disallow: /*/tags/* 
