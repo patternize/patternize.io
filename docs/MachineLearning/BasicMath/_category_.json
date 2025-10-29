@@ -1,0 +1,9 @@
+{
+  "label": "Math Refresher",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Essential mathematical concepts for machine learning: Linear Algebra, Calculus, and Statistics. Build a strong foundation to understand how ML algorithms work."
+  }
+}
+

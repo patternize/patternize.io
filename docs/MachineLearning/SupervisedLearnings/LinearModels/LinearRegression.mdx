@@ -1,0 +1,192 @@
+---
+title: Linear Regression
+sidebar_position: 1
+---
+
+import LinearRegressionChart from '@site/src/components/ML/LinearRegressionChart';
+
+# Linear Regression
+
+### What is Linear Regression
+
+:::info visualization
+
+<LinearRegressionChart />
+:::
+
+Linear Regression is a supervised learning algorithm, which assumes a linear relationship between features (X) and a target (y). We can approximate our target y, as a linear function of x, such that:
+
+$$
+h_\theta(x) = \theta_0 + \theta_1 x_1 + \theta_2 x_2 + ... + \theta_d x_d = \sum_{i=0}^{d} \theta_i x_i = \theta^T x
+$$
+
+with parameters (or weights) $\theta_i$'s
+
+Then, we minimize the **least squares** objective:
+
+$$
+J(\theta) = \sum_{i=1}^{n} \left(h_\theta(x^{(i)}) - y^{(i)}\right)^2
+$$
+
+Consider $y^{(i)} = \theta^T x^{(i)} + \varepsilon^{(i)}$ where $\varepsilon^{(i)} \sim \mathcal{N}(0, \sigma^2)$ independently and identically distributed (iid).
+
+$\mathcal{N}(\mu, \sigma^2)$ is the Normal (Gaussian) distribution with probability density function:
+
+$$
+f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+$$
+
+**Maximum Likelihood Estimation (MLE)**
+
+$$
+L(\theta) = \prod_{i=1}^{n} P(y^{(i)}; x^{(i)}, \theta)
+$$
+
+$$
+= \prod_{i=1}^{n} \frac{1}{\sqrt{2\pi\sigma}} \exp\left(-\frac{(y^{(i)} - \theta^T x^{(i)})^2}{2\sigma^2}\right)
+$$
+
+**Log-Likelihood** (easier to work with):
+
+$$
+\ell(\theta) = \log L(\theta)
+$$
+
+$$
+= \log \prod_{i=1}^{n} \frac{1}{\sqrt{2\pi\sigma}} \exp\left(-\frac{(y^{(i)} - \theta^T x^{(i)})^2}{2\sigma^2}\right)
+$$
+
+$$
+= \sum_{i=1}^{n} \log \frac{1}{\sqrt{2\pi\sigma}} \exp\left(-\frac{(y^{(i)} - \theta^T x^{(i)})^2}{2\sigma^2}\right)
+$$
+
+$$
+= n \log \frac{1}{\sqrt{2\pi\sigma}} - \frac{1}{\sigma^2} \cdot \frac{1}{2} \sum_{i=1}^{n} (y^{(i)} - \theta^T x^{(i)})^2
+$$
+
+$$
+\ell(\theta) = \min_{\theta} \sum_{i=1}^{n} (y^{(i)} - \theta^T x^{(i)})^2
+$$
+
+:::tip
+$\sum_{i=1}^{n} (y^{(i)} - \theta^T x^{(i)})^2$ is also called **Sum of Squared Errors (SSE)**.
+:::
+
+### Cost Function
+
+The **Mean Squared Error (MSE)** cost function:
+
+$$
+J(\theta) = \frac{1}{2n} \sum_{i=1}^{n} (h_\theta(x^{(i)}) - y^{(i)})^2
+$$
+
+:::note
+The factor $1/2n$ can be added to the cost function because it's a constant with respect to $\theta$ in $\arg\min_\theta$.
+It doesn't affect the location of the minimum, but makes derivatives easier (cleaner factors) when optimizing.
+:::
+
+$$
+\nabla J(\theta) = \frac{1}{n} \sum_{i=1}^{n} (h_\theta(x^{(i)}) - y^{(i)}) x^{(i)}
+$$
+
+### Gradient Descent
+
+**Gradient Descent** is an iterative optimization algorithm to find the minimum of the cost function.
+
+**Algorithm:**
+
+Initialize $\theta^{(0)}$ randomly (or to zeros)
+
+For $t = 0, 1, 2, ...$ (until convergence):
+
+$$
+\theta^{(t+1)} = \theta^{(t)} - \alpha \nabla J(\theta^{(t)})
+$$
+
+**Key Parameters:**
+
+- $\alpha$ is the **learning rate** (step size)
+  - Too small → slow convergence (need more iterations)
+  - Too large → may overshoot and diverge
+- $t$ is the **iteration number**
+- The gradient $\nabla J(\theta)$ points in the direction of steepest ascent, so we subtract it to descend
+
+### Stochastic Gradient Descent
+
+Instead of computing the gradient over all $n$ examples, **Stochastic Gradient Descent (SGD)** uses one random example at a time:
+
+**Algorithm:**
+
+Initialize $\theta^{(0)}$ randomly
+
+For $t = 0, 1, 2, ...$ (until stopping):
+
+&nbsp;&nbsp;&nbsp;&nbsp;Sample an example $i \in \{1, ..., n\}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;$$\theta^{(t+1)} = \theta^{(t)} - \alpha \nabla J^{(i)}(\theta^{(t)})$$
+
+Where $\nabla J^{(i)}(\theta) = (h_\theta(x^{(i)}) - y^{(i)}) x^{(i)}$ is the gradient for a single example.
+
+**Advantages:**
+
+- Much faster per iteration (no sum over all data)
+- Can escape local minima due to noise
+- Works well with online learning
+
+**Disadvantages:**
+
+- Noisy updates, doesn't converge smoothly
+- May need learning rate decay
+
+### Mini-batch Gradient Descent
+
+**Mini-batch Gradient Descent** is a compromise between batch GD and SGD, using batch size $s$ and epoch-based shuffling:
+
+**Algorithm:**
+
+Initialize $\theta^{(0)}$ randomly, &nbsp;&nbsp;$j = 0$
+
+For $e = 0, 1, 2, ...$ (until stopping) &nbsp;&nbsp;&nbsp;&nbsp;← _Every epoch gets a new random order_
+
+&nbsp;&nbsp;&nbsp;&nbsp;Shuffle all $n$ data points randomly
+
+&nbsp;&nbsp;&nbsp;&nbsp;For $t = 1, ..., \lfloor n/s \rfloor$:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Collect the current batch $B = \{x^{(1+(t-1) \cdot s)}, ..., x^{(t \cdot s)}\}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$$\theta^{(j+1)} = \theta^{(j)} - \alpha \nabla J^B(\theta^{(j)}), \quad j = j + 1$$
+
+Where $\nabla J^B(\theta) = \frac{1}{s} \sum_{i \in B} (h_\theta(x^{(i)}) - y^{(i)}) x^{(i)}$ is the gradient over the batch.
+
+**Advantages:**
+
+- Balances speed and stability
+- Leverages vectorization for efficiency
+- Standard choice in deep learning (typical batch sizes: 32, 64, 128, 256)
+
+### Normal Equation
+
+Analytical solution to find optimal $\theta$:
+
+$$
+\theta = (X^T X)^{-1} X^T y
+$$
+
+**Pros**: No need to choose learning rate, no iterations  
+**Cons**: Slow if $n$ is large (computing inverse is $O(n^3)$)
+
+## Ridge Regression (L2 Regularization)
+
+Regularization helps prevent overfitting by adding a penalty term to the cost function that discourages complex models.
+
+Add the squared magnitude of coefficients to the cost function:
+
+$$
+J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)})^2 + \frac{\lambda}{2m} \sum_{j=1}^{n} \theta_j^2
+$$
+
+- $\lambda$ is the regularization parameter
+- Larger $\lambda$ means more regularization (simpler model)
+- Does not include $\theta_0$ in the penalty term
+
+**Effect**: Shrinks coefficients towards zero but doesn't set them exactly to zero.

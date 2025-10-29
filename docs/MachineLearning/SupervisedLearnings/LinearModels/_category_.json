@@ -1,0 +1,9 @@
+{
+  "label": "Linear Models",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "A linear model is a model that assumes a linear relationship between the input and output variables. It includes non-linear activation functions."
+  }
+}
+

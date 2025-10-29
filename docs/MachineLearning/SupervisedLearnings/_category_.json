@@ -1,0 +1,9 @@
+{
+  "label": "Supervised Learning",
+  "position": 2,
+  "link": {
+    "type": "doc",
+    "id": "MachineLearning/SupervisedLearnings/index"
+  }
+}
+
